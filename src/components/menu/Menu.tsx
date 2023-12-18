@@ -4,7 +4,7 @@ import './menu.scss';
 
 const Menu = () => {
   return (
-    <aside>
+    <aside className='menu'>
       <div className='item'>
         <span className='title'>Main</span>
         <Link to='/'>
