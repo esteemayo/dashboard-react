@@ -1,2 +1,15 @@
 .navbar {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+
+  .user {
+    img {
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      display: block;
+      object-fit: cover;
+    }
+  }
 }
