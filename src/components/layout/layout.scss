@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.main {
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+
+  .container {
+    display: flex;
+
+    .menuContainer {
+      width: 25rem;
+      padding: 0.5rem 2rem;
+      border-right: 2px solid $soft-bg;
+    }
+
+    .contentContainer {
+      padding: 0.5rem 2rem;
+      width: 100%;
+    }
+  }
+}
