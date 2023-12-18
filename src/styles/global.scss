@@ -26,3 +26,11 @@ body {
   background-color: $main-bg;
   color: $main-color;
 }
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
