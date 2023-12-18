@@ -20,11 +20,7 @@ const Navbar = () => {
           <span>1</span>
         </div>
         <div className='user'>
-          <img
-            src='https://images.pexels.com/photos/11038549/pexels-photo-11038549.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load'
-            alt='avatar'
-            className=''
-          />
+          <img src='user.jpeg' alt='avatar' className='' />
           <span>Jane</span>
         </div>
         <img src='/settings.svg' alt='settings icon' className='icon' />
