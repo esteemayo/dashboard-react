@@ -3,19 +3,26 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import Users from './pages/users/Users';
+import Layout from './components/layout/Layout';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-  },
-  {
-    path: 'users',
-    element: <Users />,
-  },
-  {
-    path: 'products',
-    element: <Products />,
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: 'users',
+        element: <Users />,
+      },
+      {
+        path: 'products',
+        element: <Products />,
+      },
+    ],
   },
 ]);
 
