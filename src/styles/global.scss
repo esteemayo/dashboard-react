@@ -1,7 +1,4 @@
-:root {
-  --clr-white: #fff;
-  --clr-black: #000;
-}
+@import './variables.scss';
 
 *,
 *::after,
@@ -21,4 +18,6 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
+  background-color: $main-bg;
+  color: $main-color;
 }
