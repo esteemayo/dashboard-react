@@ -17,6 +17,26 @@
     align-items: center;
     gap: 2rem;
 
+    .notification {
+      position: relative;
+
+      span {
+        font-size: 1.2rem;
+        background-color: #f00;
+        color: #fff;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
     .user {
       display: flex;
       align-items: center;
