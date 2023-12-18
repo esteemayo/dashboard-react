@@ -8,8 +8,14 @@ const Layout = () => {
   return (
     <main className='main'>
       <Navbar />
-      <Menu />
-      <Outlet />
+      <div className='container'>
+        <div className='menuContainer'>
+          <Menu />
+        </div>
+        <div className='contentContainer'>
+          <Outlet />
+        </div>
+      </div>
       <Footer />
     </main>
   );
