@@ -1,5 +1,10 @@
 @import './variables.scss';
 
+:root {
+  --clr-white: #fff;
+  --clr-red: #f00;
+}
+
 *,
 *::after,
 *::before {
