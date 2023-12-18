@@ -6,6 +6,8 @@ import Users from './pages/users/Users';
 import Layout from './components/layout/Layout';
 import Login from './pages/login/Login';
 
+import './styles/global.scss';
+
 const router = createBrowserRouter([
   {
     path: '/',
