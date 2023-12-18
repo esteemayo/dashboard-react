@@ -1,32 +1,29 @@
 import { Link } from 'react-router-dom';
 
+import { menu } from '../../data';
+
 import './menu.scss';
 
 const Menu = () => {
   return (
     <aside className='menu'>
-      <div className='item'>
-        <span className='title'>Main</span>
-        <Link to='/' className='listItem'>
-          <img src='/home.svg' alt='' />
-          <span className='listItemTitle'>Home</span>
-        </Link>
-        <Link to='/' className='listItem'>
-          <img src='/profile.svg' alt='' />
-          <span className='listItemTitle'>Profile</span>
-        </Link>
-      </div>
-      <div className='item'>
-        <span className='title'>Main</span>
-        <Link to='/' className='listItem'>
-          <img src='/home.svg' alt='' />
-          <span className='listItemTitle'>Home</span>
-        </Link>
-        <Link to='/' className='listItem'>
-          <img src='/profile.svg' alt='' />
-          <span className='listItemTitle'>Profile</span>
-        </Link>
-      </div>
+      {menu.map((item) => {
+        const { id, title, listItems } = item;
+        return (
+          <div key={id} className='item'>
+            <span className='title'>{title}</span>
+            {listItems.map((item) => {
+              const { id, title, url, icon } = item;
+              return (
+                <Link key={id} to={url} className='listItem'>
+                  <img src={icon} alt={title.toLowerCase()} />
+                  <span className='listItemTitle'>{title}</span>
+                </Link>
+              );
+            })}
+          </div>
+        );
+      })}
     </aside>
   );
 };
