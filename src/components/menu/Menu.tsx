@@ -7,22 +7,22 @@ const Menu = () => {
     <aside className='menu'>
       <div className='item'>
         <span className='title'>Main</span>
-        <Link to='/'>
+        <Link to='/' className='listItem'>
           <img src='/home.svg' alt='' />
           <span className='listItemTitle'>Home</span>
         </Link>
-        <Link to='/'>
+        <Link to='/' className='listItem'>
           <img src='/profile.svg' alt='' />
           <span className='listItemTitle'>Profile</span>
         </Link>
       </div>
       <div className='item'>
         <span className='title'>Main</span>
-        <Link to='/'>
+        <Link to='/' className='listItem'>
           <img src='/home.svg' alt='' />
           <span className='listItemTitle'>Home</span>
         </Link>
-        <Link to='/'>
+        <Link to='/' className='listItem'>
           <img src='/profile.svg' alt='' />
           <span className='listItemTitle'>Profile</span>
         </Link>
