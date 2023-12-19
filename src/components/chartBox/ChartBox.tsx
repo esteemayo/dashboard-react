@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { LineChart, Line, ResponsiveContainer, Tooltip } from 'recharts';
 
-import { ChartBox } from '../../types';
+import { ChartBoxProps } from '../../types';
 
 import './chartBox.scss';
 
@@ -13,7 +13,7 @@ const ChartBox = ({
   dataKey,
   color,
   percentage,
-}: ChartBox) => {
+}: ChartBoxProps) => {
   return (
     <div className='chartBox'>
       <div className='boxInfo'>
