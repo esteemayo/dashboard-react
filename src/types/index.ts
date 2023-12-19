@@ -1,4 +1,4 @@
-export interface ChartBox {
+export interface ChartBoxProps {
   icon: string;
   title: string;
   value: number | string;
