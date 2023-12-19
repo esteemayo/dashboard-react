@@ -1,2 +1,9 @@
+@import '../../styles/variables.scss';
+
 .home {
+  .box {
+    padding: 2rem;
+    border: 1px solid $soft-bg;
+    border-radius: 1rem;
+  }
 }
