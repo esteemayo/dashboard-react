@@ -31,7 +31,7 @@ const AreaChatBox = () => {
             <Tooltip />
             <Area
               type='monotone'
-              dataKey='books'
+              dataKey='electronics'
               stackId='1'
               stroke='#8884d8'
               fill='#8884d8'
@@ -44,8 +44,8 @@ const AreaChatBox = () => {
               fill='#82ca9d'
             />
             <Area
-              type='electronics'
-              dataKey='amt'
+              type='monotone'
+              dataKey='books'
               stackId='1'
               stroke='#ffc658'
               fill='#ffc658'
