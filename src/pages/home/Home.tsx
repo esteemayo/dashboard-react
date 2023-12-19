@@ -1,7 +1,7 @@
 import TopBox from '../../components/topBox/TopBox';
 import ChartBox from '../../components/chartBox/ChartBox';
 
-import { chartBoxUser } from '../../data';
+import { chartBoxProduct, chartBoxUser } from '../../data';
 
 import './home.scss';
 
@@ -15,7 +15,7 @@ const Home = () => {
         <ChartBox {...chartBoxUser} />
       </div>
       <div className='box box-3'>
-        <ChartBox />
+        <ChartBox {...chartBoxProduct} />
       </div>
       <div className='box box-4'>Box 4</div>
       <div className='box box-5'>
