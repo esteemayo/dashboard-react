@@ -17,6 +17,7 @@ const BarChatBox = ({ title, color, dataKey, chartData }: BarChatBoxProps) => {
                 borderRadius: '0.5rem',
               }}
               labelStyle={{ display: 'none' }}
+              cursor={false}
             />
             <Bar dataKey={dataKey} fill={color} />
           </BarChart>
