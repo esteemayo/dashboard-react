@@ -32,6 +32,20 @@ const PieChartBox = () => {
           </PieChart>
         </ResponsiveContainer>
       </div>
+      <div className='options'>
+        {pieChartData.map((item) => {
+          const { name, color, value } = item;
+          return (
+            <div key={name} className='option'>
+              <div className='title' style={{ backgroundColor: color }}>
+                <div className='dot' />
+                <span>{name}</span>
+              </div>
+              <span>{value}</span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
