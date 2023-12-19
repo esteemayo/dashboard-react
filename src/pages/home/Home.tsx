@@ -1,9 +1,13 @@
+import TopBox from '../../components/topBox/TopBox';
+
 import './home.scss';
 
 const Home = () => {
   return (
     <section className='home'>
-      <div className='box box-1'>Box 1</div>
+      <div className='box box-1'>
+        <TopBox />
+      </div>
       <div className='box box-2'>Box 2</div>
       <div className='box box-3'>Box 3</div>
       <div className='box box-4'>Box 4</div>
