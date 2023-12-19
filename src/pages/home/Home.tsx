@@ -3,6 +3,7 @@ import TopBox from '../../components/topBox/TopBox';
 import ChartBox from '../../components/chartBox/ChartBox';
 
 import {
+  barChartBoxRevenue,
   barChartBoxVisit,
   chartBoxConversion,
   chartBoxProduct,
@@ -36,7 +37,7 @@ const Home = () => {
       </div>
       <div className='box box-8'>Box 8</div>
       <div className='box box-9'>
-        <BarChatBox />
+        <BarChatBox {...barChartBoxRevenue} />
       </div>
     </section>
   );
