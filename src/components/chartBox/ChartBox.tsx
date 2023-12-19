@@ -68,6 +68,7 @@ const ChartBox = () => {
                 dataKey='pv'
                 stroke='#8884d8'
                 strokeWidth={2}
+                dot={false}
               />
             </LineChart>
           </ResponsiveContainer>
