@@ -1,6 +1,8 @@
 import TopBox from '../../components/topBox/TopBox';
 import ChartBox from '../../components/chartBox/ChartBox';
 
+import { chartBoxUser } from '../../data';
+
 import './home.scss';
 
 const Home = () => {
@@ -10,7 +12,7 @@ const Home = () => {
         <TopBox />
       </div>
       <div className='box box-2'>
-        <ChartBox />
+        <ChartBox {...chartBoxUser} />
       </div>
       <div className='box box-3'>
         <ChartBox />
