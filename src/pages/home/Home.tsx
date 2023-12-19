@@ -1,3 +1,4 @@
+import BarChatBox from '../../components/barChatBox/BarChatBox';
 import TopBox from '../../components/topBox/TopBox';
 import ChartBox from '../../components/chartBox/ChartBox';
 
@@ -29,9 +30,13 @@ const Home = () => {
       <div className='box box-6'>
         <ChartBox {...chartBoxConversion} />
       </div>
-      <div className='box box-7'>Box 7</div>
+      <div className='box box-7'>
+        <BarChatBox />
+      </div>
       <div className='box box-8'>Box 8</div>
-      <div className='box box-9'>Box 9</div>
+      <div className='box box-9'>
+        <BarChatBox />
+      </div>
     </section>
   );
 };
