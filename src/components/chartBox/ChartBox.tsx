@@ -52,11 +52,13 @@ const ChartBox = () => {
   return (
     <div className='chartBox'>
       <div className='boxInfo'>
-        <img src='/user.svg' alt='' />
-        <span>Total users</span>
+        <div className='title'>
+          <img src='/user.svg' alt='' />
+          <span>Total users</span>
+        </div>
+        <h1>11.238</h1>
+        <Link to='/'>View all</Link>
       </div>
-      <h1>11.238</h1>
-      <Link to='/'>View all</Link>
       <div className='chartInfo'>
         <div className='chart'>
           <ResponsiveContainer width='100%' height='100%'>
