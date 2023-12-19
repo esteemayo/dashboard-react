@@ -7,3 +7,10 @@ export interface ChartBoxProps {
   percentage: number;
   chartData: object[];
 }
+
+export interface BarChatBoxProps {
+  title: string;
+  color: string;
+  dataKey: string;
+  chartData: object[];
+}
