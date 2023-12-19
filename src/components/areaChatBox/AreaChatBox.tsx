@@ -16,10 +16,8 @@ const AreaChatBox = () => {
     <div className='wrapper'>
       <h1>Revenue analytics</h1>
       <div className='chart'>
-        <ResponsiveContainer width='100%' height='100%'>
+        <ResponsiveContainer width='99%' height='100%'>
           <AreaChart
-            width={500}
-            height={400}
             data={areaChartData}
             margin={{
               top: 10,
@@ -46,7 +44,7 @@ const AreaChatBox = () => {
               fill='#82ca9d'
             />
             <Area
-              type='electronic'
+              type='electronics'
               dataKey='amt'
               stackId='1'
               stroke='#ffc658'
