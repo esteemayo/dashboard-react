@@ -1,4 +1,5 @@
 import { topDealUsers } from '../../data';
+import { formatCurrency } from '../../utils/formatCurrency';
 
 import './topBox.scss';
 
@@ -18,7 +19,7 @@ const TopBox = () => {
                   <span className='email'>{email}</span>
                 </div>
               </div>
-              <span className='amount'>${amount}</span>
+              <span className='amount'>{formatCurrency(amount)}</span>
             </div>
           );
         })}
