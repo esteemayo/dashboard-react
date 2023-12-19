@@ -11,6 +11,12 @@
   }
 
   .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.4rem;
+
     .option {
       .title {
         .dot {
