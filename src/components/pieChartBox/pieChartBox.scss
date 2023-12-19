@@ -18,6 +18,11 @@
     font-size: 1.4rem;
 
     .option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
       .title {
         display: flex;
         align-items: center;
