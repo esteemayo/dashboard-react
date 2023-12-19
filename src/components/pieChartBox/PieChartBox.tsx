@@ -37,8 +37,8 @@ const PieChartBox = () => {
           const { name, color, value } = item;
           return (
             <div key={name} className='option'>
-              <div className='title' style={{ backgroundColor: color }}>
-                <div className='dot' />
+              <div className='title'>
+                <div className='dot' style={{ backgroundColor: color }} />
                 <span>{name}</span>
               </div>
               <span>{value}</span>
