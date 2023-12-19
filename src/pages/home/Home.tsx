@@ -15,13 +15,13 @@ const Home = () => {
       <div className='box box-3'>
         <ChartBox />
       </div>
-      <div className='box box-4'>
-        <ChartBox />
-      </div>
+      <div className='box box-4'>Box 4</div>
       <div className='box box-5'>
         <ChartBox />
       </div>
-      <div className='box box-6'>Box 6</div>
+      <div className='box box-6'>
+        <ChartBox />
+      </div>
       <div className='box box-7'>Box 7</div>
       <div className='box box-8'>Box 8</div>
       <div className='box box-9'>Box 9</div>
