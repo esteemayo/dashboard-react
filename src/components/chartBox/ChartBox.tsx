@@ -6,13 +6,13 @@ import { ChartBoxProps } from '../../types';
 import './chartBox.scss';
 
 const ChartBox = ({
+  color,
   icon,
   title,
-  value,
-  chartData,
+  number,
   dataKey,
-  color,
   percentage,
+  chartData,
 }: ChartBoxProps) => {
   return (
     <div className='chartBox'>
@@ -21,7 +21,7 @@ const ChartBox = ({
           <img src={icon} alt='' />
           <span>{title}</span>
         </div>
-        <h1>{value}</h1>
+        <h1>{number}</h1>
         <Link to='/' style={{ color }}>
           View all
         </Link>

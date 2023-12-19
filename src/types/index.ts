@@ -1,9 +1,9 @@
 export interface ChartBoxProps {
+  color: string;
   icon: string;
   title: string;
-  value: number | string;
-  chartData: object[];
+  number: number | string;
   dataKey: string;
-  color: string;
   percentage: number;
+  chartData: object[];
 }
