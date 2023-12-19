@@ -31,10 +31,17 @@
     }
 
     .texts {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
       .percentage {
+        font-weight: bold;
+        font-size: 2rem;
       }
 
       .duration {
+        font-size: 1.4rem;
       }
     }
   }
