@@ -2,5 +2,13 @@
   .dataGrid {
     font-size: 1.6rem;
     color: var(--clr-white);
+
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      display: block;
+      object-fit: cover;
+    }
   }
 }
