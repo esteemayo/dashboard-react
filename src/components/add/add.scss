@@ -50,6 +50,18 @@
         label {
           font-size: 1.4rem;
         }
+
+        input {
+          display: inline-block;
+          font-family: inherit;
+          padding: 1rem;
+          background-color: transparent;
+          color: $main-color;
+          border: 1px solid $soft-color;
+          border-radius: 3px;
+          outline-color: $soft-color;
+          caret-color: $soft-color;
+        }
       }
     }
   }
