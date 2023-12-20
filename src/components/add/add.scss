@@ -30,6 +30,11 @@
       top: 1rem;
       right: 1rem;
       cursor: pointer;
+
+      svg {
+        font-size: inherit;
+        fill: $main-color;
+      }
     }
 
     h1 {
