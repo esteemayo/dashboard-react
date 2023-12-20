@@ -567,14 +567,14 @@ export const userColumns: GridColDef[] = [
     field: 'createdAt',
     headerName: 'Created At',
     type: 'string',
-    width: 200,
+    width: 150,
     editable: true,
   },
   {
     field: 'verified',
     headerName: 'Verified',
     type: 'boolean',
-    width: 150,
+    width: 90,
     editable: true,
   },
 ];
