@@ -16,6 +16,13 @@
       align-items: center;
       gap: 1.5rem;
 
+      a {
+        &:link,
+        &:visited {
+          outline-color: #204735;
+        }
+      }
+
       img {
         width: 2rem;
         height: 2rem;
