@@ -17,6 +17,11 @@
           display: block;
           object-fit: cover;
         }
+
+        h1 {
+          text-transform: capitalize;
+          font-weight: 500;
+        }
       }
 
       &__details {
