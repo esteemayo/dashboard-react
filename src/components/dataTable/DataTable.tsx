@@ -1,4 +1,3 @@
-import Box from '@mui/material/Box';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
@@ -36,33 +35,31 @@ const DataTable = ({ columns, rows, slug }: DataTableProps) => {
 
   return (
     <div className='dataTable'>
-      <Box sx={{ height: 400, width: '100%' }}>
-        <DataGrid
-          className='dataGrid'
-          rows={rows}
-          columns={[...columns, actionColumn]}
-          initialState={{
-            pagination: {
-              paginationModel: {
-                pageSize: 5,
-              },
+      <DataGrid
+        className='dataGrid'
+        rows={rows}
+        columns={[...columns, actionColumn]}
+        initialState={{
+          pagination: {
+            paginationModel: {
+              pageSize: 10,
             },
-          }}
-          // slots={{ toolbar: GridToolbar }}
-          slotProps={{
-            toolbar: {
-              showQuickFilter: true,
-              quickFilterProps: { debounceMs: 500 },
-            },
-          }}
-          pageSizeOptions={[5]}
-          checkboxSelection
-          disableRowSelectionOnClick
-          disableColumnFilter
-          disableDensitySelector
-          disableColumnSelector
-        />
-      </Box>
+          },
+        }}
+        // slots={{ toolbar: GridToolbar }}
+        slotProps={{
+          toolbar: {
+            showQuickFilter: true,
+            quickFilterProps: { debounceMs: 500 },
+          },
+        }}
+        pageSizeOptions={[5]}
+        checkboxSelection
+        disableRowSelectionOnClick
+        disableColumnFilter
+        disableDensitySelector
+        disableColumnSelector
+      />
     </div>
   );
 };
