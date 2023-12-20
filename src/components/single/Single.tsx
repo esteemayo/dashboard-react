@@ -61,12 +61,12 @@ const Single = () => {
     <div className='single'>
       <div className='view'>
         <div className='info'>
-          <div className='topInfo'>
+          <div className='info__top'>
             <img src='' alt='' />
             <h1>John doe</h1>
             <button type='button'>Update</button>
           </div>
-          <div className='details'>
+          <div className='info__details'>
             <div className='item'>
               <span className='item__title'>Username:</span>
               <span className='item__value'>John doe</span>
