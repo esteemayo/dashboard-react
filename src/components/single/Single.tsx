@@ -68,16 +68,16 @@ const Single = () => {
           </div>
           <div className='details'>
             <div className='item'>
-              <span className='itemTitle'>Username:</span>
-              <span className='itemValue'>John doe</span>
+              <span className='item__title'>Username:</span>
+              <span className='item__value'>John doe</span>
             </div>
             <div className='item'>
-              <span className='itemTitle'>Username:</span>
-              <span className='itemValue'>John doe</span>
+              <span className='item__title'>Username:</span>
+              <span className='item__value'>John doe</span>
             </div>
             <div className='item'>
-              <span className='itemTitle'>Username:</span>
-              <span className='itemValue'>John doe</span>
+              <span className='item__title'>Username:</span>
+              <span className='item__value'>John doe</span>
             </div>
           </div>
         </div>
