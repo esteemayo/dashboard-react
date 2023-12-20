@@ -21,6 +21,13 @@
         height: 2rem;
         cursor: pointer;
       }
+
+      button {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        outline-color: #d7143c;
+      }
     }
   }
 }
