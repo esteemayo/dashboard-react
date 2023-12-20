@@ -60,6 +60,12 @@ const DataTable = () => {
               },
             },
           }}
+          slotProps={{
+            toolbar: {
+              showQuickFilter: true,
+              quickFilterProps: { debounceMs: 500 },
+            },
+          }}
           pageSizeOptions={[5]}
           checkboxSelection
           disableRowSelectionOnClick
