@@ -64,5 +64,12 @@
       text-transform: capitalize;
       margin-bottom: 2rem;
     }
+
+    ul {
+      li {
+        list-style-type: none;
+        position: relative;
+      }
+    }
   }
 }
