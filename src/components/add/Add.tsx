@@ -1,8 +1,14 @@
+import { useCallback } from 'react';
+
 import { AddProps } from '../../types';
 
 import './add.scss';
 
 const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
+  const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  }, []);
+
   return (
     <aside className={isOpen ? 'overlay active' : 'overlay'}>
       <div className='wrapper'>
@@ -10,7 +16,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
           X
         </span>
         <h1>Add new {slug}</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           {columns
             .filter((item) => item.field !== 'id' || item.field !== 'img')
             .map((item) => {
@@ -22,6 +28,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
                 </div>
               );
             })}
+          <button type='submit'>Send</button>
         </form>
       </div>
     </aside>
