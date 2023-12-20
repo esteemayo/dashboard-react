@@ -528,7 +528,7 @@ export const userRows = [
 export const userColumns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 90 },
   {
-    field: 'avatar',
+    field: 'img',
     headerName: 'Avatar',
     width: 90,
     renderCell: (params) => {
