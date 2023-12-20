@@ -2,7 +2,6 @@ import Box from '@mui/material/Box';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
-// import { GridToolbar } from '@mui/x-data-grid-premium';
 
 import { DataTableProps } from '../../types';
 
