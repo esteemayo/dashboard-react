@@ -2,6 +2,8 @@ import Box from '@mui/material/Box';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 // import { GridToolbar } from '@mui/x-data-grid-premium';
 
+import './dataTable.scss';
+
 const DataTable = () => {
   const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 90 },
