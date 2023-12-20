@@ -22,7 +22,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
             .map((item) => {
               const { type, field, headerName } = item;
               return (
-                <div className='item'>
+                <div key={field} className='item'>
                   <label htmlFor=''>{headerName}</label>
                   <input type={type} placeholder={field} />
                 </div>
