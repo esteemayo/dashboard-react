@@ -5,10 +5,13 @@
     flex: 1;
 
     .info {
-      .topInfo {
+      &__top {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
       }
 
-      .details {
+      &__details {
         .item {
           &__title {
           }
