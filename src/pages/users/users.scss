@@ -4,6 +4,10 @@
     align-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
+
+    h1 {
+      text-transform: capitalize;
+    }
   }
 
   button {
