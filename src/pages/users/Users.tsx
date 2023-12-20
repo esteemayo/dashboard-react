@@ -8,8 +8,9 @@ import './users.scss';
 
 const Users = () => {
   const isOpen = useAddStore((state) => state.isOpen);
-  const onOpen = useAddStore((state) => state.onOpen);
   const onClose = useAddStore((state) => state.onClose);
+  const onOpen = useAddStore((state) => state.onOpen);
+
   return (
     <div className='users'>
       <div className='info'>
