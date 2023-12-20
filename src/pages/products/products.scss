@@ -1,2 +1,22 @@
 .products {
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+
+  button {
+    display: inline;
+    border: none;
+    text-transform: capitalize;
+    padding: 0.5rem;
+    border-radius: 3px;
+    outline-color: #ddd;
+    cursor: pointer;
+  }
 }
