@@ -5,4 +5,14 @@
     gap: 2rem;
     margin-bottom: 2rem;
   }
+
+  button {
+    display: inline;
+    border: none;
+    text-transform: capitalize;
+    padding: 0.5rem;
+    border-radius: 3px;
+    outline-color: #ddd;
+    cursor: pointer;
+  }
 }
