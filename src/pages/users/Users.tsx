@@ -10,7 +10,7 @@ const Users = () => {
         <h1>Users</h1>
         <button>Add new user</button>
       </div>
-      <DataTable columns={userColumns} rows={userRows} />
+      <DataTable columns={userColumns} rows={userRows} slug='users' />
     </div>
   );
 };
