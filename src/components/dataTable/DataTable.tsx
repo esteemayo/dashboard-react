@@ -47,7 +47,7 @@ const DataTable = () => {
   ];
 
   return (
-    <div className='wrapper'>
+    <div className='dataTable'>
       <Box sx={{ height: 400, width: '100%' }}>
         <DataGrid
           className='dataGrid'
