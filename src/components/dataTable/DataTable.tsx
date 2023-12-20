@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { Link } from 'react-router-dom';
 // import { GridToolbar } from '@mui/x-data-grid-premium';
 
 import { DataTableProps } from '../../types';
@@ -7,6 +8,24 @@ import { DataTableProps } from '../../types';
 import './dataTable.scss';
 
 const DataTable = ({ columns, rows }: DataTableProps) => {
+  const actionColumn: GridColDef = {
+    field: 'action',
+    headerName: 'Action',
+    width: 200,
+    renderCell: (params) => {
+      return (
+        <div className='action'>
+          <Link to={`/users/${params.row.id}`}>
+            <img src='/view.svg' alt='edit icon' />
+          </Link>
+          <button type='button'>
+            <img src='/delete.svg' alt='delete icon' />
+          </button>
+        </div>
+      );
+    },
+  };
+
   return (
     <div className='dataTable'>
       <Box sx={{ height: 400, width: '100%' }}>
