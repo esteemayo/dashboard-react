@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 // import { GridToolbar } from '@mui/x-data-grid-premium';
 
@@ -8,6 +9,14 @@ import { DataTableProps } from '../../types';
 import './dataTable.scss';
 
 const DataTable = ({ columns, rows, slug }: DataTableProps) => {
+  const handleDelete = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
+      e.stopPropagation();
+      console.log(`${id} has been deleted!`);
+    },
+    []
+  );
+
   const actionColumn: GridColDef = {
     field: 'action',
     headerName: 'Action',
@@ -18,7 +27,7 @@ const DataTable = ({ columns, rows, slug }: DataTableProps) => {
           <Link to={`/${slug}/${params.row.id}`}>
             <img src='/view.svg' alt='edit icon' />
           </Link>
-          <button type='button'>
+          <button type='button' onClick={(e) => handleDelete(e, params.row.id)}>
             <img src='/delete.svg' alt='delete icon' />
           </button>
         </div>
