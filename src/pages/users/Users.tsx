@@ -1,3 +1,4 @@
+import { userColumns, userRows } from '../../data';
 import DataTable from '../../components/dataTable/DataTable';
 
 import './users.scss';
@@ -9,7 +10,7 @@ const Users = () => {
         <h1>Users</h1>
         <button>Add new user</button>
       </div>
-      <DataTable />
+      <DataTable columns={userColumns} rows={userRows} />
     </div>
   );
 };
