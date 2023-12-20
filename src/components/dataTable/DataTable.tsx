@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+// import { GridToolbar } from '@mui/x-data-grid-premium';
 
 const DataTable = () => {
   const columns: GridColDef[] = [
@@ -60,6 +61,7 @@ const DataTable = () => {
               },
             },
           }}
+          // slots={{ toolbar: GridToolbar }}
           slotProps={{
             toolbar: {
               showQuickFilter: true,
@@ -69,6 +71,9 @@ const DataTable = () => {
           pageSizeOptions={[5]}
           checkboxSelection
           disableRowSelectionOnClick
+          disableColumnFilter
+          disableDensitySelector
+          disableColumnSelector
         />
       </Box>
     </div>
