@@ -62,7 +62,7 @@ const Single = () => {
       <div className='view'>
         <div className='info'>
           <div className='info__top'>
-            <img src='' alt='' />
+            <img src='/user-1.jpeg' alt='image' />
             <h1>John doe</h1>
             <button type='button'>Update</button>
           </div>
