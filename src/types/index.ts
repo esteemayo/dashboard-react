@@ -20,4 +20,5 @@ export interface BarChatBoxProps {
 export interface DataTableProps {
   columns: GridColDef[];
   rows: object[];
+  slug: string;
 }

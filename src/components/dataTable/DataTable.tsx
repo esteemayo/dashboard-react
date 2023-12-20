@@ -7,7 +7,7 @@ import { DataTableProps } from '../../types';
 
 import './dataTable.scss';
 
-const DataTable = ({ columns, rows }: DataTableProps) => {
+const DataTable = ({ columns, rows, slug }: DataTableProps) => {
   const actionColumn: GridColDef = {
     field: 'action',
     headerName: 'Action',
@@ -15,7 +15,7 @@ const DataTable = ({ columns, rows }: DataTableProps) => {
     renderCell: (params) => {
       return (
         <div className='action'>
-          <Link to={`/users/${params.row.id}`}>
+          <Link to={`/${slug}/${params.row.id}`}>
             <img src='/view.svg' alt='edit icon' />
           </Link>
           <button type='button'>
