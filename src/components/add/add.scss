@@ -67,6 +67,15 @@
           caret-color: $soft-color;
         }
       }
+
+      button {
+        display: inline-block;
+        border: none;
+        width: 100%;
+        padding: 1rem;
+        outline-color: $soft-color;
+        cursor: pointer;
+      }
     }
   }
 }
