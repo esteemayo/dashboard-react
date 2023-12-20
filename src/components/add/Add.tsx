@@ -4,7 +4,7 @@ import './add.scss';
 
 const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
   return (
-    <aside className='overlay'>
+    <aside className={isOpen ? 'overlay active' : 'overlay'}>
       <div className='wrapper'>
         <span className='close' onClick={onClose}>
           X
