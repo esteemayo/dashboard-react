@@ -50,3 +50,7 @@ a {
   font-size: 1.6rem !important;
   color: var(--clr-white) !important;
 }
+
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-booleanCell[data-value='true'] {
+  color: var(--clr-white) !important;
+}
