@@ -11,7 +11,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
 
   return (
     <aside className={isOpen ? 'overlay active' : 'overlay'}>
-      <div className='wrapper'>
+      <div className='modal'>
         <span className='close' onClick={onClose}>
           X
         </span>

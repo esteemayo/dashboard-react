@@ -6,6 +6,10 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.724);
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &.active {
   }
 
