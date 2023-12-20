@@ -22,3 +22,10 @@ export interface DataTableProps {
   rows: object[];
   slug: string;
 }
+
+export interface AddProps {
+  slug: string;
+  columns: GridColDef[];
+  onOpen(): void;
+  onClose(): void;
+}
