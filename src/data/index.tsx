@@ -530,7 +530,7 @@ export const userColumns: GridColDef[] = [
   {
     field: 'avatar',
     headerName: 'Avatar',
-    width: 100,
+    width: 90,
     renderCell: (params) => {
       return <img src={params.row.img ?? '/noavatar.png'} alt='' />;
     },
@@ -539,7 +539,7 @@ export const userColumns: GridColDef[] = [
     field: 'firstName',
     type: 'string',
     headerName: 'First name',
-    width: 150,
+    width: 130,
     editable: true,
   },
   {
@@ -560,7 +560,7 @@ export const userColumns: GridColDef[] = [
     field: 'phone',
     headerName: 'Phone',
     type: 'string',
-    width: 200,
+    width: 150,
     editable: true,
   },
   {
@@ -574,7 +574,7 @@ export const userColumns: GridColDef[] = [
     field: 'verified',
     headerName: 'Verified',
     type: 'boolean',
-    width: 90,
+    width: 70,
     editable: true,
   },
 ];
