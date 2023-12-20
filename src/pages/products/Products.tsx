@@ -1,7 +1,7 @@
 import Add from '../../components/add/Add';
 import DataTable from '../../components/dataTable/DataTable';
 
-import { products, userColumns } from '../../data';
+import { productColumns, products } from '../../data';
 import { useAddStore } from '../../hooks/useAddStore';
 
 import './products.scss';
@@ -17,10 +17,10 @@ const Products = () => {
         <h1>Products</h1>
         <button onClick={onOpen}>Add new product</button>
       </div>
-      <DataTable slug='products' columns={userColumns} rows={products} />
+      <DataTable slug='products' columns={productColumns} rows={products} />
       <Add
         slug='product'
-        columns={userColumns}
+        columns={productColumns}
         isOpen={isOpen}
         onClose={onClose}
       />
