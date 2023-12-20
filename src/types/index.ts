@@ -26,6 +26,6 @@ export interface DataTableProps {
 export interface AddProps {
   slug: string;
   columns: GridColDef[];
-  onOpen(): void;
+  isOpen: boolean;
   onClose(): void;
 }
