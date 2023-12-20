@@ -59,6 +59,7 @@
         input {
           display: inline-block;
           font-family: inherit;
+          font-size: 1.4rem;
           padding: 1rem;
           background-color: transparent;
           color: $main-color;
@@ -66,6 +67,11 @@
           border-radius: 3px;
           outline-color: $soft-color;
           caret-color: $soft-color;
+
+          &::placeholder {
+            font-size: 1.2rem;
+            color: $soft-color;
+          }
         }
       }
 
