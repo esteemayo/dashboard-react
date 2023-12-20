@@ -1,4 +1,4 @@
-import { GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import { GridColDef } from '@mui/x-data-grid';
 
 export const menu = [
   {
@@ -576,15 +576,6 @@ export const userColumns: GridColDef[] = [
     type: 'boolean',
     width: 150,
     editable: true,
-  },
-  {
-    field: 'fullName',
-    headerName: 'Full name',
-    description: 'This column has a value getter and is not sortable.',
-    sortable: false,
-    width: 160,
-    valueGetter: (params: GridValueGetterParams) =>
-      `${params.row.firstName || ''} ${params.row.lastName || ''}`,
   },
 ];
 
