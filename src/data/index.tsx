@@ -689,7 +689,7 @@ export const productColumns: GridColDef[] = [
   {
     field: 'img',
     headerName: 'Image',
-    width: 100,
+    width: 90,
     renderCell: (params) => {
       return (
         <img src={params.row.img ?? '/noavatar.png'} alt={params.row.title} />
@@ -706,30 +706,30 @@ export const productColumns: GridColDef[] = [
     field: 'color',
     type: 'string',
     headerName: 'Color',
-    width: 150,
+    width: 90,
   },
   {
     field: 'price',
     type: 'string',
     headerName: 'Price',
-    width: 200,
+    width: 150,
   },
   {
     field: 'producer',
     headerName: 'Producer',
     type: 'string',
-    width: 200,
+    width: 150,
   },
   {
     field: 'createdAt',
     headerName: 'Created At',
-    width: 200,
+    width: 150,
     type: 'string',
   },
   {
     field: 'inStock',
     headerName: 'In Stock',
-    width: 150,
+    width: 70,
     type: 'boolean',
   },
 ];
