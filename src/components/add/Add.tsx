@@ -1,3 +1,4 @@
+import { FaTimes } from 'react-icons/fa';
 import { useCallback, useEffect, useState } from 'react';
 
 import { AddProps } from '../../types';
@@ -39,7 +40,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     >
       <div className='modal'>
         <span className='close' onClick={onClose}>
-          X
+          <FaTimes />
         </span>
         <h1>Add new {slug}</h1>
         <form onSubmit={handleSubmit}>
