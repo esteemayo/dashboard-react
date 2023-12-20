@@ -1,3 +1,5 @@
+import { GridColDef } from '@mui/x-data-grid';
+
 export interface ChartBoxProps {
   color: string;
   icon: string;
@@ -13,4 +15,9 @@ export interface BarChatBoxProps {
   color: string;
   dataKey: string;
   chartData: object[];
+}
+
+export interface DataTableProps {
+  columns: GridColDef[];
+  rows: object[];
 }
