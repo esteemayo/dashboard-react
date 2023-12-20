@@ -78,8 +78,10 @@
           position: absolute;
           left: 50%;
           bottom: 0;
+          transform: translateX(-50%);
           width: 1rem;
           height: 1rem;
+          background-color: #f45b69;
           border-radius: 50%;
         }
       }
