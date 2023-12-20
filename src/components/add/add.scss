@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .overlay {
   width: 100vw;
   height: 100%;
@@ -13,7 +15,11 @@
   &.active {
   }
 
-  .wrapper {
+  .modal {
+    padding: 5rem;
+    border-radius: 1rem;
+    background-color: $main-color;
+
     span {
     }
 
