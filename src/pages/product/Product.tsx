@@ -1,7 +1,13 @@
+import Single from '../../components/single/Single';
+
 import './product.scss';
 
 const Product = () => {
-  return <section>Product</section>;
+  return (
+    <section>
+      <Single />
+    </section>
+  );
 };
 
 export default Product;
