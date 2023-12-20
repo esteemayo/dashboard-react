@@ -1,7 +1,7 @@
 import Add from '../../components/add/Add';
 import DataTable from '../../components/dataTable/DataTable';
-import { products, userColumns } from '../../data';
 
+import { products, userColumns } from '../../data';
 import { useAddStore } from '../../hooks/useAddStore';
 
 import './products.scss';
