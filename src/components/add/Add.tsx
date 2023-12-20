@@ -18,13 +18,13 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
         <h1>Add new {slug}</h1>
         <form onSubmit={handleSubmit}>
           {columns
-            .filter((item) => item.field !== 'id' || item.field !== 'img')
+            .filter((item) => item.field !== 'id' && item.field !== 'img')
             .map((item) => {
               const { type, field, headerName } = item;
               return (
                 <div key={field} className='item'>
-                  <label htmlFor=''>{headerName}</label>
-                  <input type={type} placeholder={field} />
+                  <label htmlFor={field}>{headerName}</label>
+                  <input id={field} type={type} placeholder={field} />
                 </div>
               );
             })}
