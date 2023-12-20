@@ -5,12 +5,28 @@ import { AddProps } from '../../types';
 import './add.scss';
 
 const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
+  const handleClose = useCallback(
+    (e: React.MouseEvent<HTMLElement>) => {
+      e.stopPropagation();
+
+      const target = e.target as HTMLElement;
+
+      if (target.classList.contains('overlay')) {
+        onClose();
+      }
+    },
+    [onClose]
+  );
+
   const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   }, []);
 
   return (
-    <aside className={isOpen ? 'overlay active' : 'overlay'}>
+    <aside
+      onClick={handleClose}
+      className={isOpen ? 'overlay active' : 'overlay'}
+    >
       <div className='modal'>
         <span className='close' onClick={onClose}>
           X
