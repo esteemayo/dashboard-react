@@ -14,7 +14,7 @@ const Products = () => {
   return (
     <div className='products'>
       <div className='info'>
-        <h1>Users</h1>
+        <h1>Products</h1>
         <button onClick={onOpen}>Add new product</button>
       </div>
       <DataTable columns={userColumns} rows={products} slug='products' />
