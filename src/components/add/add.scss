@@ -33,5 +33,13 @@
       color: $soft-color;
       margin-bottom: 4rem;
     }
+
+    form {
+      max-width: 50rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
