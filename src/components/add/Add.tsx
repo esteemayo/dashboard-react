@@ -1,10 +1,12 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import { AddProps } from '../../types';
 
 import './add.scss';
 
 const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
+  const [showModal, setShowModal] = useState(isOpen);
+
   const handleClose = useCallback(
     (e: React.MouseEvent<HTMLElement>) => {
       e.stopPropagation();
@@ -22,10 +24,18 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     e.preventDefault();
   }, []);
 
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
+
+  if (!isOpen) {
+    return;
+  }
+
   return (
     <aside
       onClick={handleClose}
-      className={isOpen ? 'overlay active' : 'overlay'}
+      className={showModal ? 'overlay active' : 'overlay'}
     >
       <div className='modal'>
         <span className='close' onClick={onClose}>
