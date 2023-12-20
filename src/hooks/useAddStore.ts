@@ -11,9 +11,13 @@ interface ActionType {
   onClose(): void;
 }
 
+const INITIAL_STATE = {
+  isOpen: false,
+};
+
 export const useAddStore = create<AddStore & ActionType>()(
   devtools((set) => ({
-    isOpen: false,
+    isOpen: INITIAL_STATE.isOpen,
     onOpen: () =>
       set(
         produce((state) => {
