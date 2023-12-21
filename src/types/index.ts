@@ -29,3 +29,21 @@ export interface AddProps {
   isOpen: boolean;
   onClose(): void;
 }
+
+export interface SingleProps {
+  id: number;
+  img?: string;
+  title: string;
+  info: string;
+  chart?: {
+    dataKeys: {
+      name: string;
+      color: string;
+    };
+    data: object[];
+  };
+  activities?: {
+    time: string;
+    text: string;
+  };
+}
