@@ -34,7 +34,7 @@ export interface SingleProps {
   id: number;
   img?: string;
   title: string;
-  info: string;
+  info: object;
   chart?: {
     dataKeys: {
       name: string;
