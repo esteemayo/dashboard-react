@@ -23,11 +23,11 @@ const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
             <button type='button'>Update</button>
           </div>
           <div className='info__details'>
-            {Object.entries(info).map((item) => {
+            {Object.entries(info).map(([key, value]) => {
               return (
-                <div key={item[0]} className='item'>
-                  <span className='item__title'>{item[0]}:</span>
-                  <span className='item__value'>{item[1]}</span>
+                <div key={key} className='item'>
+                  <span className='item__title'>{key}:</span>
+                  <span className='item__value'>{value}</span>
                 </div>
               );
             })}
