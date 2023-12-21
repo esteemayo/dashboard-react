@@ -4,6 +4,8 @@ import Navbar from '../navbar/Navbar';
 import Menu from '../menu/Menu';
 import Footer from '../footer/Footer';
 
+import QueryProvider from '../../providers/QueryProvider';
+
 import './layout.scss';
 
 const Layout = () => {
@@ -15,7 +17,9 @@ const Layout = () => {
           <Menu />
         </div>
         <div className='contentContainer'>
-          <Outlet />
+          <QueryProvider>
+            <Outlet />
+          </QueryProvider>
         </div>
       </div>
       <Footer />
