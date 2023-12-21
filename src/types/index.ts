@@ -45,5 +45,5 @@ export interface SingleProps {
   activities?: {
     time: string;
     text: string;
-  };
+  }[];
 }
