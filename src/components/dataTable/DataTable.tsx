@@ -1,5 +1,6 @@
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useCallback } from 'react';
+import { useMutation, QueryClient } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 
 import { DataTableProps } from '../../types';
@@ -7,12 +8,25 @@ import { DataTableProps } from '../../types';
 import './dataTable.scss';
 
 const DataTable = ({ columns, rows, slug }: DataTableProps) => {
-  const handleDelete = useCallback(
-    (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
-      e.stopPropagation();
-      console.log(`${id} has been deleted!`);
+  const queryClient = new QueryClient();
+
+  const mutation = useMutation({
+    mutationFn: (id: number) => {
+      return fetch(`http://localhost:8800/api/v1/${slug}/${id}`, {
+        method: 'DELETE',
+      });
     },
-    []
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: [`${slug}`] });
+    },
+  });
+
+  const handleDelete = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>, id: number) => {
+      e.stopPropagation();
+      mutation.mutate(id);
+    },
+    [mutation]
   );
 
   const actionColumn: GridColDef = {
