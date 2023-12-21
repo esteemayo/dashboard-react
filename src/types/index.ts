@@ -36,12 +36,10 @@ export interface SingleProps {
   title: string;
   info: string;
   chart?: {
-    dataKeys: [
-      {
-        name: string;
-        color: string;
-      }
-    ];
+    dataKeys: {
+      name: string;
+      color: string;
+    }[];
     data: object[];
   };
   activities?: {
