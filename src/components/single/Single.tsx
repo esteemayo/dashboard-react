@@ -8,9 +8,11 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
+import { SingleProps } from '../../types';
+
 import './single.scss';
 
-const Single = () => {
+const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
   const data = [
     {
       name: 'Page A',
