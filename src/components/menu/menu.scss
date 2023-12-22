@@ -33,6 +33,10 @@
 
       .listItemTitle {
         text-transform: capitalize;
+
+        @include lg {
+          display: none;
+        }
       }
     }
   }
