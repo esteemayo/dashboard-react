@@ -53,6 +53,7 @@ const DataTable = ({ columns, rows, slug }: DataTableProps) => {
         className='dataGrid'
         rows={rows}
         columns={[...columns, actionColumn]}
+        getRowId={(row) => row.id}
         initialState={{
           pagination: {
             paginationModel: {
