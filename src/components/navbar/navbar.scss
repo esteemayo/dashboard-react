@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .navbar {
   width: 100%;
   padding: 2rem;
@@ -25,7 +27,7 @@
         width: 1.6rem;
         height: 1.6rem;
         background-color: var(--clr-red);
-        color: var(--clr-white);
+        color: $main-color;
         border-radius: 50%;
         position: absolute;
         top: -1rem;
