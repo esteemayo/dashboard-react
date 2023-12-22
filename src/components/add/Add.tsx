@@ -47,9 +47,11 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
   const handleSubmit = useCallback(
     (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
+
       mutation.mutate();
+      onClose();
     },
-    [mutation]
+    [mutation, onClose]
   );
 
   useEffect(() => {
