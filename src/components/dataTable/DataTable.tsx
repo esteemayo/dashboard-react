@@ -17,7 +17,7 @@ const DataTable = ({ columns, rows, slug }: DataTableProps) => {
       });
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: [`${slug}`] });
+      queryClient.invalidateQueries({ queryKey: [slug] });
     },
   });
 
