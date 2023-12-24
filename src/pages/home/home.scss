@@ -11,12 +11,15 @@
   @include xl {
     grid-template-columns: repeat(3, 1fr);
   }
+
   @include lg {
     grid-template-columns: repeat(2, 1fr);
   }
+
   @include md {
     grid-template-columns: repeat(1, 1fr);
   }
+
   @include sm {
     grid-auto-rows: minmax(120px, auto);
   }
