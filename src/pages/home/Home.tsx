@@ -31,16 +31,16 @@ const Home = () => {
         <PieChartBox />
       </div>
       <div className='box box-5'>
-        <ChartBox {...chartBoxRevenue} />
-      </div>
-      <div className='box box-6'>
         <ChartBox {...chartBoxConversion} />
       </div>
+      <div className='box box-6'>
+        <ChartBox {...chartBoxRevenue} />
+      </div>
       <div className='box box-7'>
-        <BarChatBox {...barChartBoxVisit} />
+        <AreaChatBox />
       </div>
       <div className='box box-8'>
-        <AreaChatBox />
+        <BarChatBox {...barChartBoxVisit} />
       </div>
       <div className='box box-9'>
         <BarChatBox {...barChartBoxRevenue} />
