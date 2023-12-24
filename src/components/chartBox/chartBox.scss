@@ -44,6 +44,10 @@
       .percentage {
         font-weight: bold;
         font-size: 2rem;
+
+        @include xxl {
+          font-size: 1.6rem;
+        }
       }
 
       .duration {
