@@ -9,9 +9,9 @@ import {
 
 import { areaChartData } from '../../data';
 
-import './areaChatBox.scss';
+import './areaChartBox.scss';
 
-const AreaChatBox = () => {
+const AreaChartBox = () => {
   return (
     <div className='wrapper'>
       <h1>Revenue analytics</h1>
@@ -57,4 +57,4 @@ const AreaChatBox = () => {
   );
 };
 
-export default AreaChatBox;
+export default AreaChartBox;
