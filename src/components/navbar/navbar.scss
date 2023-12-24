@@ -20,8 +20,10 @@
     align-items: center;
     gap: 2rem;
 
-    @include sm {
-      display: none;
+    .icon {
+      @include sm {
+        display: none;
+      }
     }
 
     .notification {
