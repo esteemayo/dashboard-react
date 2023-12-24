@@ -2,7 +2,7 @@ import BarChatBox from '../../components/barChatBox/BarChatBox';
 import TopBox from '../../components/topBox/TopBox';
 import PieChartBox from '../../components/pieChartBox/PieChartBox';
 import ChartBox from '../../components/chartBox/ChartBox';
-import AreaChatBox from '../../components/areaChatBox/AreaChatBox';
+import AreaChartBox from '../../components/areaChartBox/AreaChartBox';
 
 import {
   barChartBoxRevenue,
@@ -37,7 +37,7 @@ const Home = () => {
         <ChartBox {...chartBoxRevenue} />
       </div>
       <div className='box box-7'>
-        <AreaChatBox />
+        <AreaChartBox />
       </div>
       <div className='box box-8'>
         <BarChatBox {...barChartBoxVisit} />
