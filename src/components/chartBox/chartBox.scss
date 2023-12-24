@@ -23,6 +23,12 @@
         text-transform: capitalize;
       }
     }
+
+    h1 {
+      @include xxl {
+        font-size: 2rem;
+      }
+    }
   }
 
   .chartInfo {
