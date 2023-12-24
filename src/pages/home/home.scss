@@ -21,7 +21,7 @@
   }
 
   @include sm {
-    grid-auto-rows: minmax(120px, auto);
+    grid-auto-rows: minmax(12rem, auto);
   }
 
   .box {
