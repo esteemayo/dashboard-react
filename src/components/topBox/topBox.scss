@@ -27,6 +27,10 @@
           border-radius: 50%;
           display: block;
           object-fit: cover;
+
+          @include xxl {
+            display: none;
+          }
         }
 
         .userTexts {
