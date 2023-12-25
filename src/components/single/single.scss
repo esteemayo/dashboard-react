@@ -23,6 +23,11 @@
           border-radius: 50%;
           display: block;
           object-fit: cover;
+
+          @include sm {
+            width: 7rem;
+            height: 7rem;
+          }
         }
 
         h1 {
