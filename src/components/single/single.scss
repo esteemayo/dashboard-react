@@ -61,8 +61,6 @@
           }
 
           &__value {
-            text-transform: capitalize;
-
             @include sm {
               font-size: 1.5rem;
             }
