@@ -127,6 +127,10 @@
 
           p {
             margin-bottom: 0.5rem;
+
+            @include sm {
+              font-size: 1.5rem;
+            }
           }
 
           time {
