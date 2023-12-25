@@ -49,6 +49,10 @@
 
           .email {
             font-size: 1.2rem;
+
+            @include xxl {
+              display: none;
+            }
           }
         }
       }
