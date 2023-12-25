@@ -31,6 +31,10 @@
           @include xxl {
             display: none;
           }
+
+          @include lg {
+            display: block;
+          }
         }
 
         .userTexts {
