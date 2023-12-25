@@ -4,6 +4,10 @@
   display: flex;
   height: 100%;
 
+  @include sm {
+    flex-direction: column;
+  }
+
   .boxInfo {
     flex: 2;
     display: flex;
