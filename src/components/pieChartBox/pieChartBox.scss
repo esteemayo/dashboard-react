@@ -1,8 +1,16 @@
+@import '../../styles/responsive.scss';
+
 .wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  h1 {
+    @include xxl {
+      font-size: 2.4rem;
+    }
+  }
 
   .chart {
     width: 100%;
