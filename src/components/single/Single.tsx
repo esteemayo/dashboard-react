@@ -12,7 +12,7 @@ import { SingleProps } from '../../types';
 
 import './single.scss';
 
-const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
+const Single = ({ img, title, info, chart, activities }: SingleProps) => {
   return (
     <div className='single'>
       <div className='view'>
@@ -38,6 +38,7 @@ const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
           <div className='chart'>
             <ResponsiveContainer width='100%' height='100%'>
               <LineChart
+                key={Math.random() * 1000}
                 width={500}
                 height={300}
                 data={chart.data}
