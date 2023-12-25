@@ -120,7 +120,7 @@
         position: relative;
         width: 1px;
         padding-top: 5rem;
-        background-color: #f45b69;
+        background-color: var(--clr-red-light);
 
         &::after {
           content: '';
@@ -130,7 +130,7 @@
           transform: translateX(-50%);
           width: 1rem;
           height: 1rem;
-          background-color: #f45b69;
+          background-color: var(--clr-red-light);
           border-radius: 50%;
         }
 
