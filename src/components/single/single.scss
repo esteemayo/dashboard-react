@@ -1,5 +1,12 @@
+@import '../../styles/responsive.scss';
+
 .single {
   display: flex;
+
+  @include xl {
+    flex-direction: column;
+    gap: 5rem;
+  }
 
   .view {
     flex: 1;
