@@ -105,6 +105,10 @@
           padding: 1.5rem;
           background-color: #f45b6810;
 
+          @include md {
+            min-width: 25rem;
+          }
+
           p {
             margin-bottom: 0.5rem;
           }
