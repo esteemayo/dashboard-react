@@ -117,6 +117,34 @@ export interface DataTableProps {
   slug: string;
 }
 
+export interface SingleUserType {
+  id: number;
+  title: string;
+  img: string;
+  info: {
+    username: string;
+    fullname: string;
+    email: string;
+    phone: string;
+    status: string;
+  };
+  chart: {
+    dataKeys: {
+      name: string;
+      color: string;
+    }[];
+    data: {
+      name: string;
+      visits: number;
+      clicks: number;
+    }[];
+  };
+  activities: {
+    text: string;
+    time: string;
+  }[];
+}
+
 export interface AddProps {
   slug: string;
   columns: GridColDef[];
