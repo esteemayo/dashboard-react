@@ -13,6 +13,14 @@ export type MenuType = {
   listItems: ListItem[];
 }[];
 
+export type TopDealUser = {
+  id: number;
+  img: string;
+  username: string;
+  email: string;
+  account: number;
+}[];
+
 export interface ChartBoxProps {
   color: string;
   icon: string;
