@@ -1,6 +1,7 @@
 import { GridColDef } from '@mui/x-data-grid';
 
 import {
+  AreaChartType,
   BarChartType,
   ChartBoxType,
   MenuType,
@@ -344,7 +345,7 @@ export const pieChartData: PieChartType = [
   },
 ];
 
-export const areaChartData = [
+export const areaChartData: AreaChartType = [
   {
     name: 'Sun',
     books: 4000,
