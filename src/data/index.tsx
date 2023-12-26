@@ -8,7 +8,7 @@ import {
   PieChartType,
   ProductType,
   TopDealUser,
-  UserRow,
+  UserType,
 } from '../types';
 
 export const menu: MenuType = [
@@ -392,7 +392,7 @@ export const areaChartData: AreaChartType = [
   },
 ];
 
-export const userRows: UserRow = [
+export const userRows: UserType = [
   {
     id: 1,
     img: 'https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
