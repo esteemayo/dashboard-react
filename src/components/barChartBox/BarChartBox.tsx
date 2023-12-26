@@ -1,10 +1,15 @@
 import { BarChart, Bar, ResponsiveContainer, Tooltip } from 'recharts';
 
-import { BarChatBoxProps } from '../../types';
+import { BarChartBoxProps } from '../../types';
 
 import './barChartBox.scss';
 
-const BarChartBox = ({ title, color, dataKey, chartData }: BarChatBoxProps) => {
+const BarChartBox = ({
+  title,
+  color,
+  dataKey,
+  chartData,
+}: BarChartBoxProps) => {
   return (
     <div className='wrapper'>
       <h1>{title}</h1>

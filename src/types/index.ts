@@ -74,7 +74,7 @@ export interface BarChartType {
   chartData: RevenueChartData | VisitChartData;
 }
 
-export interface BarChatBoxProps {
+export interface BarChartBoxProps {
   title: string;
   color: string;
   dataKey: string;
