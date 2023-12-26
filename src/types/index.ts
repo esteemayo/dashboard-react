@@ -82,6 +82,13 @@ export type PieChartType = {
   color: string;
 }[];
 
+export type AreaChartType = {
+  name: string;
+  books: number;
+  clothes: number;
+  electronics: number;
+}[];
+
 export interface DataTableProps {
   columns: GridColDef[];
   rows: object[];
