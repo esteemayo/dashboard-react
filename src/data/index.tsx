@@ -1,6 +1,12 @@
 import { GridColDef } from '@mui/x-data-grid';
 
-import { BarChartType, ChartBoxType, MenuType, TopDealUser } from '../types';
+import {
+  BarChartType,
+  ChartBoxType,
+  MenuType,
+  PieChartType,
+  TopDealUser,
+} from '../types';
 
 export const menu: MenuType = [
   {
@@ -315,7 +321,7 @@ export const barChartBoxVisit: BarChartType = {
   ],
 };
 
-export const pieChartData = [
+export const pieChartData: PieChartType = [
   {
     name: 'Mobile',
     value: 400,
