@@ -180,20 +180,4 @@ export interface AddProps {
   onClose(): void;
 }
 
-export interface SingleProps {
-  id: number;
-  img?: string;
-  title: string;
-  info: object;
-  chart?: {
-    dataKeys: {
-      name: string;
-      color: string;
-    }[];
-    data: object[];
-  };
-  activities?: {
-    time: string;
-    text: string;
-  }[];
-}
+export type SingleProps = SingleUserType | SingleProductType;
