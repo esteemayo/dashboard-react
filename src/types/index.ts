@@ -100,6 +100,17 @@ export type UserRow = {
   verified?: boolean;
 }[];
 
+export type ProductType = {
+  id: number;
+  img: string;
+  title: string;
+  color: string;
+  producer: string;
+  price: string;
+  createdAt: string;
+  inStock?: boolean;
+}[];
+
 export interface DataTableProps {
   columns: GridColDef[];
   rows: object[];
