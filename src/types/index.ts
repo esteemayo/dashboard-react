@@ -89,6 +89,17 @@ export type AreaChartType = {
   electronics: number;
 }[];
 
+export type UserRow = {
+  id: number;
+  img: string;
+  lastName: string;
+  firstName: string;
+  email: string;
+  phone: string;
+  createdAt: string;
+  verified: boolean;
+}[];
+
 export interface DataTableProps {
   columns: GridColDef[];
   rows: object[];
