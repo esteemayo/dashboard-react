@@ -1,4 +1,4 @@
-import BarChatBox from '../../components/barChatBox/BarChatBox';
+import BarChartBox from '../../components/barChartBox/BarChartBox';
 import TopBox from '../../components/topBox/TopBox';
 import PieChartBox from '../../components/pieChartBox/PieChartBox';
 import ChartBox from '../../components/chartBox/ChartBox';
@@ -40,10 +40,10 @@ const Home = () => {
         <AreaChartBox />
       </div>
       <div className='box box-8'>
-        <BarChatBox {...barChartBoxVisit} />
+        <BarChartBox {...barChartBoxVisit} />
       </div>
       <div className='box box-9'>
-        <BarChatBox {...barChartBoxRevenue} />
+        <BarChartBox {...barChartBoxRevenue} />
       </div>
     </section>
   );
