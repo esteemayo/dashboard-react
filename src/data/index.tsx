@@ -1,6 +1,6 @@
 import { GridColDef } from '@mui/x-data-grid';
 
-import { MenuType } from '../types';
+import { MenuType, TopDealUser } from '../types';
 
 export const menu: MenuType = [
   {
@@ -119,7 +119,7 @@ export const menu: MenuType = [
   },
 ];
 
-export const topDealUsers = [
+export const topDealUsers: TopDealUser = [
   {
     id: 1,
     img: '/user-1.jpeg',

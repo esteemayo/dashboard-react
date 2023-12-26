@@ -18,7 +18,7 @@ export type TopDealUser = {
   img: string;
   username: string;
   email: string;
-  account: number;
+  amount: number;
 }[];
 
 export interface ChartBoxProps {
