@@ -10,20 +10,34 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
   const queryClient = new QueryClient();
   const [showModal, setShowModal] = useState(isOpen);
 
+  const newUser = {
+    id: 111,
+    img: '',
+    lastName: 'Doe',
+    firstName: 'John',
+    email: 'jdoe@example.com',
+    phone: '123 456 789',
+    createdAt: '22.12.2023',
+    verified: true,
+  };
+
+  const newProduct = {
+    id: 123,
+    title: 'New product',
+    color: 'Black',
+    price: 49.99,
+    producer: 'Nike',
+    createdAt: '27.12.2023',
+    inStock: true,
+  };
+
+  const data = slug === 'user' ? newUser : newProduct;
+
   const mutation = useMutation({
     mutationFn: () => {
       return fetch(`http://localhost:8800/api/v1/${slug}s`, {
         method: 'POST',
-        body: JSON.stringify({
-          id: 111,
-          img: '',
-          lastName: 'Doe',
-          firstName: 'John',
-          email: 'jdoe@example.com',
-          phone: '123 456 789',
-          createdAt: '22.12.2023',
-          verified: true,
-        }),
+        body: JSON.stringify(data),
       });
     },
     onSuccess: () => {
