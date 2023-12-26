@@ -1,6 +1,7 @@
 import { GridColDef } from '@mui/x-data-grid';
 
 import {
+  ChartBoxConversion,
   ChartBoxProduct,
   ChartBoxRevenue,
   ChartBoxUser,
@@ -231,7 +232,7 @@ export const chartBoxRevenue: ChartBoxRevenue = {
   ],
 };
 
-export const chartBoxConversion = {
+export const chartBoxConversion: ChartBoxConversion = {
   color: 'gold',
   icon: '/conversionIcon.svg',
   title: 'Total Ratio',
