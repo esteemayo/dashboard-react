@@ -65,7 +65,7 @@ type RevenueChartData = {
 type VisitChartData = {
   name: string;
   visit: number;
-};
+}[];
 
 export interface BarChartType {
   title: string;

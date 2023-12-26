@@ -1,6 +1,6 @@
 import { GridColDef } from '@mui/x-data-grid';
 
-import { ChartBoxType, MenuType, TopDealUser } from '../types';
+import { BarChartType, ChartBoxType, MenuType, TopDealUser } from '../types';
 
 export const menu: MenuType = [
   {
@@ -243,7 +243,7 @@ export const chartBoxConversion: ChartBoxType = {
   ],
 };
 
-export const barChartBoxRevenue = {
+export const barChartBoxRevenue: BarChartType = {
   title: 'Profit Earned',
   color: '#8884d8',
   dataKey: 'profit',
@@ -279,7 +279,7 @@ export const barChartBoxRevenue = {
   ],
 };
 
-export const barChartBoxVisit = {
+export const barChartBoxVisit: BarChartType = {
   title: 'Total Visit',
   color: '#FF8042',
   dataKey: 'visit',
