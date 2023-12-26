@@ -21,6 +21,11 @@ export type TopDealUser = {
   amount: number;
 }[];
 
+interface ChartDataUser {
+  name: string;
+  users: number;
+}
+
 export interface ChartBoxUser {
   color: string;
   icon: string;
@@ -28,10 +33,7 @@ export interface ChartBoxUser {
   number: string | string;
   dataKey: string;
   percentage: number;
-  chartData: {
-    name: string;
-    users: number;
-  }[];
+  chartData: ChartDataUser[];
 }
 
 export interface ChartBoxProduct {
