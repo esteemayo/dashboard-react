@@ -173,11 +173,11 @@ export interface SingleProductType {
   }[];
 }
 
+export type SingleProps = SingleUserType | SingleProductType;
+
 export interface AddProps {
   slug: string;
   columns: GridColDef[];
   isOpen: boolean;
   onClose(): void;
 }
-
-export type SingleProps = SingleUserType | SingleProductType;
