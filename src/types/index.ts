@@ -89,7 +89,7 @@ export type AreaChartType = {
   electronics: number;
 }[];
 
-export type UserRow = {
+export type UserType = {
   id: number;
   img: string;
   lastName: string;
