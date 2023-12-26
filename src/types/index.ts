@@ -74,12 +74,7 @@ export interface BarChartType {
   chartData: RevenueChartData | VisitChartData;
 }
 
-export interface BarChartBoxProps {
-  title: string;
-  color: string;
-  dataKey: string;
-  chartData: object[];
-}
+export type BarChartBoxProps = BarChartType;
 
 export interface DataTableProps {
   columns: GridColDef[];
