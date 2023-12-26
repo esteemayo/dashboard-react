@@ -67,12 +67,12 @@ type VisitChartData = {
   visit: number;
 }[];
 
-export type BarChartType = {
+export interface BarChartType {
   title: string;
   color: string;
   dataKey: string;
   chartData: RevenueChartData | VisitChartData;
-}[];
+}
 
 export interface BarChatBoxProps {
   title: string;
