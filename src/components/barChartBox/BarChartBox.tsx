@@ -2,7 +2,7 @@ import { BarChart, Bar, ResponsiveContainer, Tooltip } from 'recharts';
 
 import { BarChatBoxProps } from '../../types';
 
-import './barChatBox.scss';
+import './barChartBox.scss';
 
 const BarChartBox = ({ title, color, dataKey, chartData }: BarChatBoxProps) => {
   return (
