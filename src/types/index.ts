@@ -21,7 +21,6 @@ export interface DataTableProps {
   columns: GridColDef[];
   rows: object[];
   slug: string;
-  swal: object;
 }
 
 export interface AddProps {
@@ -47,11 +46,4 @@ export interface SingleProps {
     time: string;
     text: string;
   }[];
-}
-
-export interface SwalResult {
-  isConfirmed: boolean;
-  isDenied: boolean;
-  isDismissed: boolean;
-  value: boolean;
 }
