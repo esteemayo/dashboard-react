@@ -1,13 +1,6 @@
 import { GridColDef } from '@mui/x-data-grid';
 
-import {
-  ChartBoxConversion,
-  ChartBoxProduct,
-  ChartBoxRevenue,
-  ChartBoxUser,
-  MenuType,
-  TopDealUser,
-} from '../types';
+import { ChartBoxType, MenuType, TopDealUser } from '../types';
 
 export const menu: MenuType = [
   {
@@ -178,7 +171,7 @@ export const topDealUsers: TopDealUser = [
   },
 ];
 
-export const chartBoxUser: ChartBoxUser = {
+export const chartBoxUser: ChartBoxType = {
   color: '#8884d8',
   icon: '/userIcon.svg',
   title: 'Total Users',
@@ -196,7 +189,7 @@ export const chartBoxUser: ChartBoxUser = {
   ],
 };
 
-export const chartBoxProduct: ChartBoxProduct = {
+export const chartBoxProduct: ChartBoxType = {
   color: 'skyblue',
   icon: '/productIcon.svg',
   title: 'Total Products',
@@ -214,7 +207,7 @@ export const chartBoxProduct: ChartBoxProduct = {
   ],
 };
 
-export const chartBoxRevenue: ChartBoxRevenue = {
+export const chartBoxRevenue: ChartBoxType = {
   color: 'teal',
   icon: '/revenueIcon.svg',
   title: 'Total Revenue',
@@ -232,7 +225,7 @@ export const chartBoxRevenue: ChartBoxRevenue = {
   ],
 };
 
-export const chartBoxConversion: ChartBoxConversion = {
+export const chartBoxConversion: ChartBoxType = {
   color: 'gold',
   icon: '/conversionIcon.svg',
   title: 'Total Ratio',
