@@ -97,7 +97,7 @@ export type UserRow = {
   email: string;
   phone: string;
   createdAt: string;
-  verified: boolean;
+  verified?: boolean;
 }[];
 
 export interface DataTableProps {
