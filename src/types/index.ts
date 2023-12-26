@@ -34,6 +34,19 @@ export interface ChartBoxUser {
   }[];
 }
 
+export interface ChartBoxProduct {
+  color: string;
+  icon: string;
+  title: string;
+  number: string | string;
+  dataKey: string;
+  percentage: number;
+  chartData: {
+    name: string;
+    products: number;
+  }[];
+}
+
 export interface ChartBoxProps {
   color: string;
   icon: string;
