@@ -47,6 +47,19 @@ export interface ChartBoxProduct {
   }[];
 }
 
+export interface ChartBoxRevenue {
+  color: string;
+  icon: string;
+  title: string;
+  number: string | string;
+  dataKey: string;
+  percentage: number;
+  chartData: {
+    name: string;
+    revenue: number;
+  }[];
+}
+
 export interface ChartBoxProps {
   color: string;
   icon: string;
