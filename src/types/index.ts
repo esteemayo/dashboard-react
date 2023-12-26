@@ -145,6 +145,34 @@ export interface SingleUserType {
   }[];
 }
 
+export interface SingleProductType {
+  id: number;
+  title: string;
+  img: string;
+  info: {
+    productId: string;
+    color: string;
+    price: string;
+    producer: string;
+    export: string;
+  };
+  chart: {
+    dataKeys: {
+      name: string;
+      color: string;
+    }[];
+    data: {
+      name: string;
+      visits: number;
+      orders: number;
+    }[];
+  };
+  activities: {
+    text: string;
+    time: string;
+  }[];
+}
+
 export interface AddProps {
   slug: string;
   columns: GridColDef[];
