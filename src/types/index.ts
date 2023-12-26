@@ -26,6 +26,11 @@ interface ChartDataUser {
   users: number;
 }
 
+interface ChartDataProduct {
+  name: string;
+  products: number;
+}
+
 export interface ChartBoxUser {
   color: string;
   icon: string;
@@ -43,10 +48,7 @@ export interface ChartBoxProduct {
   number: string | string;
   dataKey: string;
   percentage: number;
-  chartData: {
-    name: string;
-    products: number;
-  }[];
+  chartData: ChartDataProduct[];
 }
 
 export interface ChartBoxRevenue {
