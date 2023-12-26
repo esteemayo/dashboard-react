@@ -76,6 +76,12 @@ export interface BarChartType {
 
 export type BarChartBoxProps = BarChartType;
 
+export type PieChartType = {
+  name: string;
+  value: number;
+  color: string;
+}[];
+
 export interface DataTableProps {
   columns: GridColDef[];
   rows: object[];
