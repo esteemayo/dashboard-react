@@ -206,6 +206,7 @@ export const chartBoxProduct: ChartBoxProduct = {
     { name: 'Sat', products: 450 },
   ],
 };
+
 export const chartBoxRevenue = {
   color: 'teal',
   icon: '/revenueIcon.svg',
@@ -223,6 +224,7 @@ export const chartBoxRevenue = {
     { name: 'Sat', revenue: 450 },
   ],
 };
+
 export const chartBoxConversion = {
   color: 'gold',
   icon: '/conversionIcon.svg',
