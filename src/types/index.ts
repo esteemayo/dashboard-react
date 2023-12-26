@@ -31,6 +31,11 @@ interface ChartDataProduct {
   products: number;
 }
 
+interface ChartDataRevenue {
+  name: string;
+  revenue: number;
+}
+
 export interface ChartBoxUser {
   color: string;
   icon: string;
@@ -58,10 +63,7 @@ export interface ChartBoxRevenue {
   number: string | string;
   dataKey: string;
   percentage: number;
-  chartData: {
-    name: string;
-    revenue: number;
-  }[];
+  chartData: ChartDataRevenue[];
 }
 
 export interface ChartBoxConversion {
