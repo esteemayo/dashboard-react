@@ -60,6 +60,19 @@ export interface ChartBoxRevenue {
   }[];
 }
 
+export interface ChartBoxConversion {
+  color: string;
+  icon: string;
+  title: string;
+  number: string | string;
+  dataKey: string;
+  percentage: number;
+  chartData: {
+    name: string;
+    ratio: number;
+  }[];
+}
+
 export interface ChartBoxProps {
   color: string;
   icon: string;
