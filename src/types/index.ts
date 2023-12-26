@@ -21,25 +21,25 @@ export type TopDealUser = {
   amount: number;
 }[];
 
-interface ChartDataUser {
+type ChartDataUser = {
   name: string;
   users: number;
-}
+}[];
 
-interface ChartDataProduct {
+type ChartDataProduct = {
   name: string;
   products: number;
-}
+}[];
 
-interface ChartDataRevenue {
+type ChartDataRevenue = {
   name: string;
   revenue: number;
-}
+}[];
 
-interface ChartDataConversion {
+type ChartDataConversion = {
   name: string;
   ratio: number;
-}
+}[];
 
 export interface ChartBoxType {
   color: string;
@@ -49,10 +49,10 @@ export interface ChartBoxType {
   dataKey: string;
   percentage: number;
   chartData:
-    | ChartDataUser[]
-    | ChartDataProduct[]
-    | ChartDataRevenue[]
-    | ChartDataConversion[];
+    | ChartDataUser
+    | ChartDataProduct
+    | ChartDataRevenue
+    | ChartDataConversion;
 }
 
 export interface ChartBoxProps {
