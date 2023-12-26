@@ -6,6 +6,7 @@ import {
   ChartBoxType,
   MenuType,
   PieChartType,
+  ProductType,
   TopDealUser,
   UserRow,
 } from '../types';
@@ -596,7 +597,7 @@ export const userColumns: GridColDef[] = [
   },
 ];
 
-export const products = [
+export const products: ProductType = [
   {
     id: 1,
     img: 'https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png',
