@@ -279,7 +279,7 @@ export const barChartBoxRevenue: BarChartType = {
   ],
 };
 
-export const barChartBoxVisit = {
+export const barChartBoxVisit: BarChartType = {
   title: 'Total Visit',
   color: '#FF8042',
   dataKey: 'visit',
