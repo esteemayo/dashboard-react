@@ -1,5 +1,18 @@
 import { GridColDef } from '@mui/x-data-grid';
 
+interface ListItem {
+  id: number;
+  title: string;
+  url: string;
+  icon: string;
+}
+
+export type MenuType = {
+  id: number;
+  title: string;
+  listItems: ListItem[];
+}[];
+
 export interface ChartBoxProps {
   color: string;
   icon: string;
