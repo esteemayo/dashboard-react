@@ -55,15 +55,7 @@ export interface ChartBoxType {
     | ChartDataConversion;
 }
 
-export interface ChartBoxProps {
-  color: string;
-  icon: string;
-  title: string;
-  number: number | string;
-  dataKey: string;
-  percentage: number;
-  chartData: object[];
-}
+export type ChartBoxProps = ChartBoxType;
 
 export interface BarChatBoxProps {
   title: string;
