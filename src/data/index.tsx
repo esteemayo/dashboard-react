@@ -7,6 +7,7 @@ import {
   MenuType,
   PieChartType,
   ProductType,
+  SingleUserType,
   TopDealUser,
   UserType,
 } from '../types';
@@ -747,7 +748,7 @@ export const productColumns: GridColDef[] = [
   },
 ];
 
-export const singleUser = {
+export const singleUser: SingleUserType = {
   id: 1,
   title: 'John Doe',
   img: 'https://images.pexels.com/photos/17397364/pexels-photo-17397364.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
