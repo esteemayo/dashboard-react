@@ -25,7 +25,7 @@ export interface ChartBoxUser {
   color: string;
   icon: string;
   title: string;
-  number: string;
+  number: string | string;
   dataKey: string;
   percentage: number;
   chartData: {
