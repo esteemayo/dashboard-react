@@ -113,7 +113,7 @@ export type ProductType = {
 
 export interface DataTableProps {
   columns: GridColDef[];
-  rows: object[];
+  rows: UserType | ProductType;
   slug: string;
 }
 
