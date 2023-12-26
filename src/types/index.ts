@@ -57,6 +57,23 @@ export interface ChartBoxType {
 
 export type ChartBoxProps = ChartBoxType;
 
+type RevenueChartData = {
+  name: string;
+  profit: number;
+}[];
+
+type VisitChartData = {
+  name: string;
+  visit: number;
+};
+
+export interface BarChartType {
+  title: string;
+  color: string;
+  dataKey: string;
+  chartData: RevenueChartData | VisitChartData;
+}
+
 export interface BarChatBoxProps {
   title: string;
   color: string;
