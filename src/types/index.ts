@@ -48,3 +48,10 @@ export interface SingleProps {
     text: string;
   }[];
 }
+
+export interface SwalResult {
+  isConfirmed: boolean;
+  isDenied: boolean;
+  isDismissed: boolean;
+  value: boolean;
+}
