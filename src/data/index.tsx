@@ -1,6 +1,6 @@
 import { GridColDef } from '@mui/x-data-grid';
 
-import { MenuType, TopDealUser } from '../types';
+import { ChartBoxUser, MenuType, TopDealUser } from '../types';
 
 export const menu: MenuType = [
   {
@@ -171,7 +171,7 @@ export const topDealUsers: TopDealUser = [
   },
 ];
 
-export const chartBoxUser = {
+export const chartBoxUser: ChartBoxUser = {
   color: '#8884d8',
   icon: '/userIcon.svg',
   title: 'Total Users',
