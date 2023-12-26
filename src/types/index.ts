@@ -21,6 +21,7 @@ export interface DataTableProps {
   columns: GridColDef[];
   rows: object[];
   slug: string;
+  swal: object;
 }
 
 export interface AddProps {
