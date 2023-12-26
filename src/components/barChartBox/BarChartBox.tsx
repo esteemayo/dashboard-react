@@ -4,7 +4,7 @@ import { BarChatBoxProps } from '../../types';
 
 import './barChatBox.scss';
 
-const BarChatBox = ({ title, color, dataKey, chartData }: BarChatBoxProps) => {
+const BarChartBox = ({ title, color, dataKey, chartData }: BarChatBoxProps) => {
   return (
     <div className='wrapper'>
       <h1>{title}</h1>
@@ -27,4 +27,4 @@ const BarChatBox = ({ title, color, dataKey, chartData }: BarChatBoxProps) => {
   );
 };
 
-export default BarChatBox;
+export default BarChartBox;
