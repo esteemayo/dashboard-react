@@ -1,6 +1,8 @@
 import { GridColDef } from '@mui/x-data-grid';
 
-export const menu = [
+import { MenuType } from '../types';
+
+export const menu: MenuType = [
   {
     id: 1,
     title: 'main',
