@@ -41,6 +41,20 @@ interface ChartDataConversion {
   ratio: number;
 }
 
+export interface ChartBoxType {
+  color: string;
+  icon: string;
+  title: string;
+  number: string | string;
+  dataKey: string;
+  percentage: number;
+  chartData:
+    | ChartDataUser[]
+    | ChartDataProduct[]
+    | ChartBoxRevenue[]
+    | ChartBoxConversion[];
+}
+
 export interface ChartBoxUser {
   color: string;
   icon: string;
