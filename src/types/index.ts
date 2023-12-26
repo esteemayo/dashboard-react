@@ -55,46 +55,6 @@ export interface ChartBoxType {
     | ChartDataConversion[];
 }
 
-export interface ChartBoxUser {
-  color: string;
-  icon: string;
-  title: string;
-  number: string | string;
-  dataKey: string;
-  percentage: number;
-  chartData: ChartDataUser[];
-}
-
-export interface ChartBoxProduct {
-  color: string;
-  icon: string;
-  title: string;
-  number: string | string;
-  dataKey: string;
-  percentage: number;
-  chartData: ChartDataProduct[];
-}
-
-export interface ChartBoxRevenue {
-  color: string;
-  icon: string;
-  title: string;
-  number: string | string;
-  dataKey: string;
-  percentage: number;
-  chartData: ChartDataRevenue[];
-}
-
-export interface ChartBoxConversion {
-  color: string;
-  icon: string;
-  title: string;
-  number: string | string;
-  dataKey: string;
-  percentage: number;
-  chartData: ChartDataConversion[];
-}
-
 export interface ChartBoxProps {
   color: string;
   icon: string;
