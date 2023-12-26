@@ -51,8 +51,8 @@ export interface ChartBoxType {
   chartData:
     | ChartDataUser[]
     | ChartDataProduct[]
-    | ChartBoxRevenue[]
-    | ChartBoxConversion[];
+    | ChartDataRevenue[]
+    | ChartDataConversion[];
 }
 
 export interface ChartBoxUser {
