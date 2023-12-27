@@ -13,6 +13,8 @@ export type MenuType = {
   listItems: ListItem[];
 }[];
 
+export type ListItemProps = ListItem;
+
 export type TopDealUser = {
   id: number;
   img: string;
