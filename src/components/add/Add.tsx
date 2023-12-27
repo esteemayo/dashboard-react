@@ -45,17 +45,20 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     },
   });
 
-  const handleClose = useCallback(
-    (e: React.MouseEvent<HTMLElement>) => {
-      e.stopPropagation();
+  const handleClose = useCallback(() => {
+    setShowModal(false);
+    onClose();
+  }, [onClose]);
 
+  const closeHandler = useCallback(
+    (e: React.MouseEvent<HTMLElement>) => {
       const target = e.target as HTMLElement;
 
       if (target.classList.contains('overlay')) {
-        onClose();
+        handleClose();
       }
     },
-    [onClose]
+    [handleClose]
   );
 
   const handleSubmit = useCallback(
