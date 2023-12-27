@@ -93,8 +93,8 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
       onClick={closeHandler}
       className={showModal ? 'overlay active' : 'overlay'}
     >
-      <div className='wrapper'>
-        <div className={showModal ? 'modal active' : 'modal'}>
+      <div className={showModal ? 'wrapper active' : 'wrapper'}>
+        <div className='modal'>
           <span className='close' onClick={handleClose}>
             <FaTimes />
           </span>
