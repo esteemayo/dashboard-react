@@ -15,7 +15,7 @@ interface MenuItem {
 
 export type MenuType = MenuItem[];
 
-export type MenuItemProps = MenuType;
+export type MenuItemProps = MenuItem;
 
 export type ListItemProps = ListItem;
 
