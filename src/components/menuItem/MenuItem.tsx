@@ -1,8 +1,9 @@
 import ListItem from '../listItem/Listtem';
+import { MenuItemProps } from '../../types';
 
 import './menuItem.scss';
 
-const MenuItem = ({ title, listItems }) => {
+const MenuItem = ({ title, listItems }: MenuItemProps) => {
   return (
     <div className='item'>
       <span className='title'>{title}</span>
