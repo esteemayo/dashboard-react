@@ -7,11 +7,13 @@ interface ListItem {
   icon: string;
 }
 
-export type MenuType = {
+interface MenuItem {
   id: number;
   title: string;
   listItems: ListItem[];
-}[];
+}
+
+export type MenuType = MenuItem[];
 
 export type MenuItemProps = MenuType;
 
