@@ -1,2 +1,17 @@
 .item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: $soft-color;
+
+    @include lg {
+      display: none;
+    }
+  }
 }
