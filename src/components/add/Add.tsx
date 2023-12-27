@@ -81,7 +81,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
 
   return (
     <aside
-      onClick={handleClose}
+      onClick={closeHandler}
       className={showModal ? 'overlay active' : 'overlay'}
     >
       <div className='modal'>
