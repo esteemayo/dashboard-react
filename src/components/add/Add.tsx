@@ -45,17 +45,13 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     },
   });
 
-  const handleClose = useCallback(
-    (e: React.MouseEvent<HTMLSpanElement>) => {
-      e.stopPropagation();
+  const handleClose = useCallback(() => {
+    setShowModal(false);
 
-      setShowModal(false);
-      setTimeout(() => {
-        onClose();
-      }, 300);
-    },
-    [onClose]
-  );
+    setTimeout(() => {
+      onClose();
+    }, 300);
+  }, [onClose]);
 
   const closeHandler = useCallback(
     (e: React.MouseEvent<HTMLElement>) => {
@@ -64,7 +60,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
       const target = e.target as HTMLElement;
 
       if (target.classList.contains('overlay')) {
-        handleClose(e);
+        handleClose();
       }
     },
     [handleClose]
