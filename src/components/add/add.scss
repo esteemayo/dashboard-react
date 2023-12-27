@@ -24,12 +24,12 @@
     align-items: center;
     justify-content: center;
 
-    transform: translateY(0);
+    transform: translateY(100%);
     opacity: 0;
     transition: all 300ms;
 
     &.active {
-      transform: translateY(100%);
+      transform: translateY(0);
       opacity: 1;
       transition: all 300ms;
     }

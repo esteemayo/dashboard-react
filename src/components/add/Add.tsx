@@ -64,10 +64,10 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
       const target = e.target as HTMLElement;
 
       if (target.classList.contains('overlay')) {
-        onClose();
+        handleClose(e);
       }
     },
-    [onClose]
+    [handleClose]
   );
 
   const handleSubmit = useCallback(
