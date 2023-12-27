@@ -55,8 +55,6 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
 
   const closeHandler = useCallback(
     (e: React.MouseEvent<HTMLElement>) => {
-      e.stopPropagation();
-
       const target = e.target as HTMLElement;
 
       if (target.classList.contains('overlay')) {
