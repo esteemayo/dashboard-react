@@ -45,7 +45,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     },
   });
 
-  const handleClose = useCallback(
+  const closeHandler = useCallback(
     (e: React.MouseEvent<HTMLElement>) => {
       e.stopPropagation();
 
@@ -78,11 +78,11 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
 
   return (
     <aside
-      onClick={handleClose}
+      onClick={closeHandler}
       className={showModal ? 'overlay active' : 'overlay'}
     >
       <div className='wrapper'>
-        <div className='modal'>
+        <div className={showModal ? 'modal active' : 'modal'}>
           <span className='close' onClick={onClose}>
             <FaTimes />
           </span>
