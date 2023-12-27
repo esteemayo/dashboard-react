@@ -45,6 +45,18 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     },
   });
 
+  const handleClose = useCallback(
+    (e: React.MouseEvent<HTMLSpanElement>) => {
+      e.stopPropagation();
+
+      setShowModal(false);
+      setTimeout(() => {
+        onClose();
+      }, 300);
+    },
+    [onClose]
+  );
+
   const closeHandler = useCallback(
     (e: React.MouseEvent<HTMLElement>) => {
       e.stopPropagation();
@@ -83,7 +95,7 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     >
       <div className='wrapper'>
         <div className={showModal ? 'modal active' : 'modal'}>
-          <span className='close' onClick={onClose}>
+          <span className='close' onClick={handleClose}>
             <FaTimes />
           </span>
           <h1>Add new {slug}</h1>
