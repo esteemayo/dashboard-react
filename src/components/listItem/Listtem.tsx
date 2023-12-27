@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import './menuItem.scss';
+import './listItem.scss';
 
-const MenuItem = ({ url, icon, title }) => {
+const ListItem = ({ url, icon, title }) => {
   return (
     <Link to={url} className='listItem'>
       <img src={icon} alt={title.toLowerCase()} />
@@ -11,4 +11,4 @@ const MenuItem = ({ url, icon, title }) => {
   );
 };
 
-export default MenuItem;
+export default ListItem;
