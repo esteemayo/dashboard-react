@@ -13,6 +13,8 @@ export type MenuType = {
   listItems: ListItem[];
 }[];
 
+export type MenuItemProps = MenuType;
+
 export type ListItemProps = ListItem;
 
 export type TopDealUser = {
