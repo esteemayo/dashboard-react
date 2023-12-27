@@ -45,23 +45,17 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
     },
   });
 
-  const handleClose = useCallback(() => {
-    setShowModal(false);
-
-    setTimeout(() => {
-      onClose();
-    }, 300);
-  }, [onClose]);
-
-  const closeHandler = useCallback(
+  const handleClose = useCallback(
     (e: React.MouseEvent<HTMLElement>) => {
+      e.stopPropagation();
+
       const target = e.target as HTMLElement;
 
       if (target.classList.contains('overlay')) {
-        handleClose();
+        onClose();
       }
     },
-    [handleClose]
+    [onClose]
   );
 
   const handleSubmit = useCallback(
@@ -84,30 +78,28 @@ const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
 
   return (
     <aside
-      onClick={closeHandler}
+      onClick={handleClose}
       className={showModal ? 'overlay active' : 'overlay'}
     >
-      <div className={showModal ? 'wrapper active' : 'wrapper'}>
-        <div className='modal'>
-          <span className='close' onClick={handleClose}>
-            <FaTimes />
-          </span>
-          <h1>Add new {slug}</h1>
-          <form onSubmit={handleSubmit}>
-            {columns
-              .filter((item) => item.field !== 'id' && item.field !== 'img')
-              .map((item) => {
-                const { type, field, headerName } = item;
-                return (
-                  <div key={field} className='item'>
-                    <label htmlFor={field}>{headerName}</label>
-                    <input id={field} type={type} placeholder={field} />
-                  </div>
-                );
-              })}
-            <button type='submit'>Send</button>
-          </form>
-        </div>
+      <div className='modal'>
+        <span className='close' onClick={onClose}>
+          <FaTimes />
+        </span>
+        <h1>Add new {slug}</h1>
+        <form onSubmit={handleSubmit}>
+          {columns
+            .filter((item) => item.field !== 'id' && item.field !== 'img')
+            .map((item) => {
+              const { type, field, headerName } = item;
+              return (
+                <div key={field} className='item'>
+                  <label htmlFor={field}>{headerName}</label>
+                  <input id={field} type={type} placeholder={field} />
+                </div>
+              );
+            })}
+          <button type='submit'>Send</button>
+        </form>
       </div>
     </aside>
   );
