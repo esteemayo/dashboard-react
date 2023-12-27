@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
-
 import { menu } from '../../data';
+import ListItem from '../listItem/Listtem';
 
 import './menu.scss';
 
@@ -13,13 +12,7 @@ const Menu = () => {
           <div key={id} className='item'>
             <span className='title'>{title}</span>
             {listItems.map((item) => {
-              const { id, title, url, icon } = item;
-              return (
-                <Link key={id} to={url} className='listItem'>
-                  <img src={icon} alt={title.toLowerCase()} />
-                  <span className='listItemTitle'>{title}</span>
-                </Link>
-              );
+              return <ListItem key={item.id} {...item} />;
             })}
           </div>
         );
