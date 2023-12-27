@@ -602,7 +602,7 @@ export const userColumns: GridColDef[] = [
 export const products: ProductType = [
   {
     id: 1,
-    img: 'https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png',
+    img: '/product-1.webp',
     title: 'Playstation 5 Digital Edition',
     color: 'white',
     producer: 'Sony',
@@ -612,7 +612,7 @@ export const products: ProductType = [
   },
   {
     id: 2,
-    img: 'https://www.pngmart.com/files/6/Dell-Laptop-PNG-Image.png',
+    img: '/product-2.png',
     title: 'Dell Laptop KR211822',
     color: 'black',
     producer: 'Dell',
@@ -622,7 +622,7 @@ export const products: ProductType = [
   },
   {
     id: 3,
-    img: 'http://images.samsung.com/is/image/samsung/uk-led-tv-hg40ed670ck-hg40ed670ckxxu-001-front',
+    img: '/product-3.webp',
     title: 'Samsung TV 4K SmartTV',
     color: 'gray',
     producer: 'Samsung',
@@ -632,7 +632,7 @@ export const products: ProductType = [
   },
   {
     id: 4,
-    img: 'https://raylo.imgix.net/iphone-14-blue.png',
+    img: '/product-4.avif',
     title: 'Apple Iphone 14 Pro Max',
     color: 'white',
     producer: 'Apple',
@@ -642,7 +642,7 @@ export const products: ProductType = [
   },
   {
     id: 5,
-    img: 'https://www.signify.com/b-dam/signify/en-aa/about/news/2020/20200903-movie-night-essentials-popcorn-ice-cream-and-the-new-philips-hue-play-gradient-lightstrip/packaging-lighstrip.png',
+    img: '/product-5.png',
     title: 'Philips Hue Play Gradient',
     color: 'rainbow',
     producer: 'Philips',
@@ -651,7 +651,7 @@ export const products: ProductType = [
   },
   {
     id: 6,
-    img: 'https://www.smartworld.it/wp-content/uploads/2019/09/High_Resolution_PNG-MX-Master-3-LEFT-GRAPHITE.png',
+    img: '/product-6.avif.crdownload',
     title: 'Logitech MX Master 3',
     color: 'black',
     producer: 'Logitech',
@@ -661,7 +661,7 @@ export const products: ProductType = [
   },
   {
     id: 7,
-    img: 'https://www.pngarts.com/files/7/Podcast-Mic-PNG-Picture.png',
+    img: '/product-7.png',
     title: 'Rode Podcast Microphone',
     color: 'gray',
     producer: 'Rode',
@@ -670,7 +670,7 @@ export const products: ProductType = [
   },
   {
     id: 8,
-    img: 'https://5.imimg.com/data5/SW/VM/MY-5774620/toshiba-split-ac-2-ton-3-star-rated-ras-24s3ks-500x500.png',
+    img: '/product-8.webp',
     title: 'Toshiba Split AC 2',
     color: 'white',
     producer: 'Toshiba',
@@ -680,7 +680,7 @@ export const products: ProductType = [
   },
   {
     id: 9,
-    img: 'https://img.productz.com/review_image/102489/preview_sony-kdl-50w800b-50-inch-hdtv-review-superb-picture-102489.png',
+    img: '/product-9.webp',
     title: 'Sony Bravia KDL-47W805A',
     color: 'black',
     producer: 'Sony',
@@ -689,7 +689,7 @@ export const products: ProductType = [
   },
   {
     id: 10,
-    img: 'https://venturebeat.com/wp-content/uploads/2015/07/As_AO1-131_gray_nonglare_win10_03.png?fit=1338%2C1055&strip=all',
+    img: '/product-10.webp',
     title: 'Acer Laptop 16 KL-4804',
     color: 'black',
     producer: 'Acer',
