@@ -1,4 +1,5 @@
 import { IconProps } from '../../types';
+
 import './icon.scss';
 
 const Icon = ({ src, className }: IconProps) => {
