@@ -1,5 +1,6 @@
-import './navbar.scss';
 import Logo from '../logo/Logo';
+
+import './navbar.scss';
 
 const Navbar = () => {
   return (
