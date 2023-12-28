@@ -8,15 +8,6 @@
   align-items: center;
   justify-content: space-between;
 
-  .logo {
-    & > * {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      font-weight: bold;
-    }
-  }
-
   .icons {
     display: flex;
     align-items: center;
