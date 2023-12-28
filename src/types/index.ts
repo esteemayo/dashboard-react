@@ -19,6 +19,11 @@ export type MenuItemProps = MenuItem;
 
 export type ListItemProps = ListItem;
 
+export interface IconProps {
+  src: string;
+  className: string;
+}
+
 export type TopDealUser = {
   id: number;
   img: string;
