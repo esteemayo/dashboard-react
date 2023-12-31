@@ -10,8 +10,7 @@ const Navbar = () => {
       <div className='icons'>
         <Icon src='/search.svg' className='icon' />
         <Icon src='/app.svg' className='icon' />
-        <img src='/app.svg' alt='app icon' className='icon' />
-        <img src='/expand.svg' alt='expand icon' className='icon' />
+        <Icon src='/expand.svg' className='icon' />
         <div className='notification'>
           <img src='/notifications.svg' alt='notification icon' />
           <span>1</span>
