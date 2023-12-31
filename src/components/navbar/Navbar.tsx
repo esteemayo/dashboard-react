@@ -12,7 +12,7 @@ const Navbar = () => {
         <Icon src='/app.svg' className='icon' />
         <Icon src='/expand.svg' className='icon' />
         <div className='notification'>
-          <img src='/notifications.svg' alt='notification icon' />
+          <Icon src='/notifications.svg' />
           <span>1</span>
         </div>
         <div className='user'>
