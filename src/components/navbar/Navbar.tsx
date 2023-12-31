@@ -1,3 +1,4 @@
+import Icon from '../icon/Icon';
 import Logo from '../logo/Logo';
 
 import './navbar.scss';
@@ -7,7 +8,7 @@ const Navbar = () => {
     <nav className='navbar'>
       <Logo />
       <div className='icons'>
-        <img src='/search.svg' alt='search icon' className='icon' />
+        <Icon src='/search.svg' className='icon' />
         <img src='/app.svg' alt='app icon' className='icon' />
         <img src='/expand.svg' alt='expand icon' className='icon' />
         <div className='notification'>
