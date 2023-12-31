@@ -9,6 +9,7 @@ const Navbar = () => {
       <Logo />
       <div className='icons'>
         <Icon src='/search.svg' className='icon' />
+        <Icon src='/app.svg' className='icon' />
         <img src='/app.svg' alt='app icon' className='icon' />
         <img src='/expand.svg' alt='expand icon' className='icon' />
         <div className='notification'>
