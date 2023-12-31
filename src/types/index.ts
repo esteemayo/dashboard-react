@@ -21,7 +21,7 @@ export type ListItemProps = ListItem;
 
 export interface IconProps {
   src: string;
-  className: string;
+  className?: string;
 }
 
 export type TopDealUser = {
