@@ -1,4 +1,5 @@
 import Icon from '../icon/Icon';
+import UserInfo from '../userInfo/UserInfo';
 import Logo from '../logo/Logo';
 
 import './navbar.scss';
@@ -15,10 +16,7 @@ const Navbar = () => {
           <Icon src='/notifications.svg' />
           <span>1</span>
         </div>
-        <div className='user'>
-          <Icon src='/user.jpeg' />
-          <span>Jane</span>
-        </div>
+        <UserInfo />
         <Icon src='/settings.svg' className='icon' />
       </div>
     </nav>
