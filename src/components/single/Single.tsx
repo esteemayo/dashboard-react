@@ -1,7 +1,7 @@
+import Chart from '../chart/Chart';
 import { SingleProps } from '../../types';
 
 import './single.scss';
-import Chart from '../chart/Chart';
 
 const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
   return (
