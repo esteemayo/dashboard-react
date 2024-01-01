@@ -1,5 +1,7 @@
 import Icon from '../icon/Icon';
 
+import './userInfo.scss';
+
 const UserInfo = () => {
   return (
     <div className='user'>
