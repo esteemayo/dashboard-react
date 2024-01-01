@@ -186,6 +186,22 @@ export interface SingleProductType {
 
 export type SingleProps = SingleUserType | SingleProductType;
 
+export interface ChartProps {
+  id: number;
+  chart: {
+    dataKeys: {
+      name: string;
+      color: string;
+    }[];
+    data: {
+      name: string;
+      visits?: number;
+      clicks?: number;
+      orders: number;
+    }[];
+  };
+}
+
 export interface AddProps {
   slug: string;
   columns: GridColDef[];
