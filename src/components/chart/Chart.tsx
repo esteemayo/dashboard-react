@@ -8,7 +8,9 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-const Chart = ({ id, chart }) => {
+import { ChartProps } from '../../types';
+
+const Chart = ({ id, chart }: ChartProps) => {
   return (
     <div className='chart'>
       <ResponsiveContainer width='100%' height='100%'>
