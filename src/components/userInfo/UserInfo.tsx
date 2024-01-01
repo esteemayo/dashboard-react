@@ -4,7 +4,7 @@ import './userInfo.scss';
 
 const UserInfo = () => {
   return (
-    <div className='user'>
+    <div className='userInfo'>
       <Icon src='/user.jpeg' />
       <span>Jane</span>
     </div>
