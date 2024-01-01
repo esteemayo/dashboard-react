@@ -51,7 +51,12 @@ const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
               >
                 <XAxis dataKey='name' />
                 <YAxis />
-                <Tooltip />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                  }}
+                />
                 <Legend />
                 {chart.dataKeys.map((item) => {
                   return (
