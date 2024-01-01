@@ -1,16 +1,7 @@
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
-
 import { SingleProps } from '../../types';
 
 import './single.scss';
+import Chart from '../chart/Chart';
 
 const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
   return (
@@ -34,43 +25,7 @@ const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
           </div>
         </div>
         <hr />
-        {chart && (
-          <div className='chart'>
-            <ResponsiveContainer width='100%' height='100%'>
-              <LineChart
-                key={id}
-                width={500}
-                height={300}
-                data={chart.data}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <XAxis dataKey='name' />
-                <YAxis />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: 'transparent',
-                    border: 'none',
-                  }}
-                />
-                <Legend />
-                {chart.dataKeys.map((item) => {
-                  return (
-                    <Line
-                      type='monotone'
-                      dataKey={item.name}
-                      stroke={item.color}
-                    />
-                  );
-                })}
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-        )}
+        {chart && <Chart id={id} chart={chart} />}
       </div>
       <div className='activities'>
         <h2>Latest activities</h2>
