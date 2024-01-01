@@ -5,7 +5,7 @@ import './menuItem.scss';
 
 const MenuItem = ({ title, listItems }: MenuItemProps) => {
   return (
-    <div className='item'>
+    <div className='menuItem'>
       <span className='title'>{title}</span>
       {listItems.map((item) => {
         return <ListItem key={item.id} {...item} />;
