@@ -194,6 +194,11 @@ export interface SingleProductType {
 
 export type SingleProps = SingleUserType | SingleProductType;
 
+export interface InfoTopProps {
+  img: string;
+  title: string;
+}
+
 export interface InfoDetailsProps {
   info: UserInfoType | ProductInfoType;
 }
