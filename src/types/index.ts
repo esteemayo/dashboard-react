@@ -164,13 +164,7 @@ export interface SingleUserType {
   id: number;
   title: string;
   img: string;
-  info: {
-    username: string;
-    fullname: string;
-    email: string;
-    phone: string;
-    status: string;
-  };
+  info: UserInfoType;
   chart: UserChart;
   activities: {
     text: string;
