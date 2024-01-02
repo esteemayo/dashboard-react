@@ -167,17 +167,7 @@ export interface SingleUserType {
     phone: string;
     status: string;
   };
-  chart: {
-    dataKeys: {
-      name: string;
-      color: string;
-    }[];
-    data: {
-      name: string;
-      visits: number;
-      clicks: number;
-    }[];
-  };
+  chart: UserChart;
   activities: {
     text: string;
     time: string;
