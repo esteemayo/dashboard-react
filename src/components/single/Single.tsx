@@ -1,4 +1,5 @@
 import Chart from '../chart/Chart';
+import InfoDetails from '../infoDetails/InfoDetails';
 import Activity from '../activity/Activity';
 
 import { SingleProps } from '../../types';
@@ -15,16 +16,7 @@ const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
             <h1>{title}</h1>
             <button type='button'>Update</button>
           </div>
-          <div className='info__details'>
-            {Object.entries(info).map(([key, value]) => {
-              return (
-                <div key={key} className='item'>
-                  <span className='item__title'>{key}:</span>
-                  <span className='item__value'>{value}</span>
-                </div>
-              );
-            })}
-          </div>
+          <InfoDetails info={info} />
         </div>
         <hr />
         {chart && <Chart id={id} chart={chart} />}
