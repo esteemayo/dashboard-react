@@ -136,6 +136,14 @@ interface UserInfoType {
   status: string;
 }
 
+interface ProductInfoType {
+  productId: string;
+  color: string;
+  price: string;
+  producer: string;
+  export: string;
+}
+
 interface UserChart {
   dataKeys: {
     name: string;
