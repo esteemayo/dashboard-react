@@ -129,17 +129,15 @@ export interface DataTableProps {
 }
 
 interface UserChart {
-  chart: {
-    dataKeys: {
-      name: string;
-      color: string;
-    }[];
-    data: {
-      name: string;
-      visits: number;
-      clicks: number;
-    }[];
-  };
+  dataKeys: {
+    name: string;
+    color: string;
+  }[];
+  data: {
+    name: string;
+    visits: number;
+    clicks: number;
+  }[];
 }
 
 interface ProductChart {
