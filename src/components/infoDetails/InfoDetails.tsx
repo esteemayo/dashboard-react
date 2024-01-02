@@ -1,4 +1,6 @@
-const InfoDetails = ({ info }) => {
+import { InfoDetailsProps } from '../../types';
+
+const InfoDetails = ({ info }: InfoDetailsProps) => {
   return (
     <div className='info__details'>
       {Object.entries(info).map(([key, value]) => {
