@@ -10,6 +10,8 @@ import {
 
 import { ChartProps } from '../../types';
 
+import './chart.scss';
+
 const Chart = ({ id, chart }: ChartProps) => {
   return (
     <div className='chart'>
