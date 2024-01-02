@@ -90,16 +90,6 @@
         display: none;
       }
     }
-
-    .chart {
-      margin-top: 5rem;
-      width: 80%;
-      height: 40rem;
-
-      @include md {
-        display: none;
-      }
-    }
   }
 
   .activities {
