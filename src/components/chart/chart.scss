@@ -1,0 +1,11 @@
+@import '../../styles/responsive.scss';
+
+.chart {
+  margin-top: 5rem;
+  width: 80%;
+  height: 40rem;
+
+  @include md {
+    display: none;
+  }
+}
