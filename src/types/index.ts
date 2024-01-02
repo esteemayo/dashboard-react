@@ -195,6 +195,11 @@ export interface ChartProps {
   chart: UserChart | ProductChart;
 }
 
+export interface ActivityProps {
+  text: string;
+  time: string;
+}
+
 export interface AddProps {
   slug: string;
   columns: GridColDef[];
