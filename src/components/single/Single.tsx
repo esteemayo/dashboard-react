@@ -1,6 +1,7 @@
 import Chart from '../chart/Chart';
-import InfoDetails from '../infoDetails/InfoDetails';
 import Activity from '../activity/Activity';
+import InfoTop from '../infoTop/InfoTop';
+import InfoDetails from '../infoDetails/InfoDetails';
 
 import { SingleProps } from '../../types';
 
@@ -11,11 +12,7 @@ const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
     <div className='single'>
       <div className='view'>
         <div className='info'>
-          <div className='info__top'>
-            {img && <img src={img} alt={title} />}
-            <h1>{title}</h1>
-            <button type='button'>Update</button>
-          </div>
+          <InfoTop img={img} title={title} />
           <InfoDetails info={info} />
         </div>
         <hr />
