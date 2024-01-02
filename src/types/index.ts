@@ -194,6 +194,10 @@ export interface SingleProductType {
 
 export type SingleProps = SingleUserType | SingleProductType;
 
+export interface InfoDetailsProps {
+  info: UserInfoType | ProductInfoType;
+}
+
 export interface ChartProps {
   id: number;
   chart: UserChart | ProductChart;
