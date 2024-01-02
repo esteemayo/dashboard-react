@@ -195,17 +195,7 @@ export interface SingleProductType {
     producer: string;
     export: string;
   };
-  chart: {
-    dataKeys: {
-      name: string;
-      color: string;
-    }[];
-    data: {
-      name: string;
-      visits: number;
-      orders: number;
-    }[];
-  };
+  chart: ProductChart;
   activities: {
     text: string;
     time: string;
