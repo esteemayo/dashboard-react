@@ -1,4 +1,5 @@
 import Chart from '../chart/Chart';
+import Activity from '../activity/Activity';
 import { SingleProps } from '../../types';
 
 import './single.scss';
@@ -31,15 +32,7 @@ const Single = ({ id, img, title, info, chart, activities }: SingleProps) => {
         <h2>Latest activities</h2>
         <ul>
           {activities?.map((item, index) => {
-            const { text, time } = item;
-            return (
-              <li key={index}>
-                <div>
-                  <p>{text}</p>
-                  <time>{time}</time>
-                </div>
-              </li>
-            );
+            return <Activity key={index} {...item} />;
           })}
         </ul>
       </div>
