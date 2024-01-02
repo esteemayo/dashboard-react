@@ -184,13 +184,7 @@ export interface SingleProductType {
   id: number;
   title: string;
   img: string;
-  info: {
-    productId: string;
-    color: string;
-    price: string;
-    producer: string;
-    export: string;
-  };
+  info: ProductInfoType;
   chart: ProductChart;
   activities: {
     text: string;
