@@ -32,6 +32,7 @@ const Chart = ({ id, chart }: ChartProps) => {
             contentStyle={{
               backgroundColor: '#384256',
               border: 'none',
+              borderRadius: '0.5rem',
             }}
           />
           <Legend />
