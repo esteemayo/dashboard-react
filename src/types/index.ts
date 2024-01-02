@@ -137,7 +137,7 @@ interface UserChart {
     data: {
       name: string;
       visits: number;
-      orders: number;
+      clicks: number;
     }[];
   };
 }
