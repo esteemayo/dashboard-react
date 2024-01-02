@@ -1,4 +1,6 @@
-const Activity = ({ text, time }) => {
+import { ActivityProps } from '../../types';
+
+const Activity = ({ text, time }: ActivityProps) => {
   return (
     <li>
       <div>
