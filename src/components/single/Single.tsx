@@ -1,5 +1,6 @@
 import Chart from '../chart/Chart';
 import Activity from '../activity/Activity';
+
 import { SingleProps } from '../../types';
 
 import './single.scss';
