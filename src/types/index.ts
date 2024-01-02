@@ -142,6 +142,20 @@ interface UserChart {
   };
 }
 
+interface ProductChart {
+  chart: {
+    dataKeys: {
+      name: string;
+      color: string;
+    }[];
+    data: {
+      name: string;
+      visits: number;
+      orders: number;
+    }[];
+  };
+}
+
 export interface SingleUserType {
   id: number;
   title: string;
