@@ -128,6 +128,14 @@ export interface DataTableProps {
   slug: string;
 }
 
+interface UserInfoType {
+  username: string;
+  fullname: string;
+  email: string;
+  phone: string;
+  status: string;
+}
+
 interface UserChart {
   dataKeys: {
     name: string;
