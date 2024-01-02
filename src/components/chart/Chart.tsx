@@ -30,7 +30,7 @@ const Chart = ({ id, chart }: ChartProps) => {
           <YAxis />
           <Tooltip
             contentStyle={{
-              backgroundColor: 'transparent',
+              backgroundColor: '#384256',
               border: 'none',
             }}
           />
