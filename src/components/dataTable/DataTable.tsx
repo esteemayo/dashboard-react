@@ -1,6 +1,6 @@
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useCallback } from 'react';
-import { useMutation, QueryClient } from '@tanstack/react-query';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 
 import { DataTableProps } from '../../types';
@@ -8,7 +8,7 @@ import { DataTableProps } from '../../types';
 import './dataTable.scss';
 
 const DataTable = ({ columns, rows, slug }: DataTableProps) => {
-  const queryClient = new QueryClient();
+  const queryClient = useQueryClient();
 
   const mutation = useMutation({
     mutationFn: (id: number) => {
