@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import { useMutation, QueryClient } from '@tanstack/react-query';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 import { AddProps } from '../../types';
 
 import './add.scss';
 
 const Add = ({ slug, columns, isOpen, onClose }: AddProps) => {
-  const queryClient = new QueryClient();
+  const queryClient = useQueryClient();
   const [showModal, setShowModal] = useState(isOpen);
 
   const newUser = {
