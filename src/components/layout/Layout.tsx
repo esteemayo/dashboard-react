@@ -5,6 +5,7 @@ import Menu from '../menu/Menu';
 import Footer from '../footer/Footer';
 
 import QueryProvider from '../../providers/QueryProvider';
+import ErrorBoundary from '../errorBoundary/ErrorBoundary';
 
 import './layout.scss';
 
@@ -18,7 +19,9 @@ const Layout = () => {
         </div>
         <div className='contentContainer'>
           <QueryProvider>
-            <Outlet />
+            <ErrorBoundary>
+              <Outlet />
+            </ErrorBoundary>
           </QueryProvider>
         </div>
       </div>
